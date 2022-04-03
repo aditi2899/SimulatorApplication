@@ -1,128 +1,136 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".MainActivity">
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:fillViewport="true"> <!--IMPORTANT otherwise backgrnd img. will not fill the whole screen -->
 
-    <LinearLayout
-        android:id="@+id/headings"
+    <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical">
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Analog Simulator"
-            android:textSize="50sp"
-            android:layout_gravity="center"
-            android:layout_marginBottom="5dp"
-            />
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_aligntBottom=""
-            android:text="Select the circuit"
-            android:gravity="center"
-            android:layout_gravity="center"/>
-
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_below="@+id/headings"
-        android:orientation="vertical">
+        >
 
         <LinearLayout
-            android:layout_width="match_parent"
+            android:id="@+id/headings"
+            android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical">
 
-            <ImageView
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:layout_width="100sp"
-                android:layout_height="100sp"
-                android:src="@drawable/pres1"
-                />
+                android:layout_marginBottom="5dp"
+                android:background="@color/black"
+                android:fontFamily="serif"
+                android:text="Analog Simulator"
+                android:textColor="@color/white"
+                android:textAllCaps="true"
+                android:textAlignment="center"
+                android:autoSizeTextType="uniform"
+                android:textSize="35dp"
+                android:textStyle="bold" />
 
-            <Button
-                android:id="@+id/button1"
+            <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Image1 Text"
-                android:layout_gravity="center"
-                />
+                android:text="Select a circuit :"
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:padding="5dp"
+                android:textSize="25sp"
+                android:layout_gravity="center"/>
+
         </LinearLayout>
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/headings"
             android:orientation="vertical">
 
-            <ImageView
-                android:layout_gravity="center"
-                android:layout_width="100sp"
-                android:layout_height="100sp"
-                android:src="@drawable/pres1"
-                />
-
-            <Button
-                android:layout_width="wrap_content"
+            <LinearLayout
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Image2 Text"
-                android:layout_gravity="center"
-                />
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="fill_parent"
+                    android:layout_height="300dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/rc_circuit" />
+
+                <Button
+                    android:id="@+id/button1"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="RC Circuit" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="fill_parent"
+                    android:layout_height="300dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/rl_circuit_18_2_14_2" />
+
+                <Button
+                    android:id="@+id/button4"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="RL Circuit" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="fill_parent"
+                    android:layout_height="300dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/rlc" />
+
+                <Button
+                    android:id="@+id/button3"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="RLC Circuit" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="fill_parent"
+                    android:layout_height="300dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/pres1" />
+
+                <Button
+                    android:id="@+id/button4"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="Image1 Text" />
+            </LinearLayout>
+
+
         </LinearLayout>
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical">
-
-            <ImageView
-                android:layout_gravity="center"
-                android:layout_width="100sp"
-                android:layout_height="100sp"
-                android:src="@drawable/pres1"
-                />
-
-            <Button
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Image3 Text"
-                android:layout_gravity="center"
-                />
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical">
-
-            <ImageView
-                android:layout_gravity="center"
-                android:layout_width="100sp"
-                android:layout_height="100sp"
-                android:src="@drawable/pres1"
-                />
-
-            <Button
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Image4 Text"
-                android:layout_gravity="center"
-                />
-        </LinearLayout>
-
-
-    </LinearLayout>
 
 
 
-
-
-</RelativeLayout>
+    </RelativeLayout>
+</ScrollView>
