@@ -19,10 +19,11 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
 
-                Intent i = new Intent(getApplicationContext(),Form1.class);
+                Intent i = new Intent(getApplicationContext(), BuckConverter.class);
                 startActivity(i);
             }
         });
+
     }
 
 }

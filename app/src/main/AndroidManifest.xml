@@ -10,7 +10,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.SimulatorApplication">
         <activity
-            android:name=".Form1"
+            android:name=".BuckConverter"
             android:exported="false" />
         <activity
             android:name=".MainActivity"
