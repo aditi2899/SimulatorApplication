@@ -1,15 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ScrollView
     xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="fill_parent"
-    android:layout_height="fill_parent"
-    android:fillViewport="true"> <!--IMPORTANT otherwise backgrnd img. will not fill the whole screen -->
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:fillViewport="true">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".BuckConverter">
+    tools:context=".BoostConvertor">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -17,21 +18,34 @@
         android:orientation="vertical">
 
         <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Buck Converter"/>
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_marginBottom="5dp"
+            android:padding="13dp"
+            android:autoSizeTextType="uniform"
+            android:background="@color/black"
+            android:fontFamily="serif"
+            android:textAlignment="center"
+            android:textAllCaps="true"
+            android:textColor="@color/white"
+            android:textSize="35dp"
+            android:textStyle="bold"
+            android:text="Boost Converter"/>
 
         <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="300dp"
             android:layout_gravity="center"
-            android:layout_width="100sp"
-            android:layout_height="100sp"
-            android:src="@drawable/buck__1_"
-            />
+            android:paddingRight="27dp"
+            android:src="@drawable/boost__1_" />
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Voltage"/>
+            android:text="Voltage"
+            android:textColor="@color/black"
+            android:textSize="21dp"/>
 
         <EditText
             android:layout_width="match_parent"
@@ -41,7 +55,9 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Resistance"/>
+            android:text="Resistance"
+            android:textColor="@color/black"
+            android:textSize="21dp"/>
 
         <EditText
             android:layout_width="match_parent"
@@ -51,7 +67,9 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Capacitance"/>
+            android:text="Capacitance"
+            android:textColor="@color/black"
+            android:textSize="21dp"/>
 
         <EditText
             android:layout_width="match_parent"
@@ -61,7 +79,9 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Inductance"/>
+            android:text="Inductance"
+            android:textColor="@color/black"
+            android:textSize="21dp"/>
 
         <EditText
             android:layout_width="match_parent"
@@ -71,7 +91,9 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="T_on"/>
+            android:text="T_on"
+            android:textColor="@color/black"
+            android:textSize="21dp"/>
 
         <EditText
             android:layout_width="match_parent"
@@ -81,7 +103,9 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="T_off"/>
+            android:text="T_off"
+            android:textColor="@color/black"
+            android:textSize="21dp"/>
 
         <EditText
             android:layout_width="match_parent"
@@ -91,7 +115,9 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Initial Capacitance Voltage"/>
+            android:text="Initial Capacitance Voltage"
+            android:textColor="@color/black"
+            android:textSize="21dp"/>
 
         <EditText
             android:layout_width="match_parent"
@@ -101,7 +127,9 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Initial Inductor Current"/>
+            android:text="Initial Inductor Current"
+            android:textColor="@color/black"
+            android:textSize="21dp"/>
 
         <EditText
             android:layout_width="match_parent"
@@ -111,7 +139,9 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Total time for simulation"/>
+            android:text="Total time for simulation"
+            android:textColor="@color/black"
+            android:textSize="21dp"/>
 
         <EditText
             android:layout_width="match_parent"
@@ -120,11 +150,13 @@
 
         <Button
             android:layout_width="wrap_content"
-            android:layout_height="57dp"
-            android:layout_gravity="center"
+            android:layout_height="wrap_content"
+            android:text="Submit"
             android:paddingVertical="7dp"
-            android:text="Submit" />
+            android:layout_gravity="center"
+            />
     </LinearLayout>
 
 </RelativeLayout>
+
     </ScrollView>
