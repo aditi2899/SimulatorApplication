@@ -4,127 +4,147 @@
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
     android:fillViewport="true"> <!--IMPORTANT otherwise backgrnd img. will not fill the whole screen -->
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".BuckConverter">
 
-    <LinearLayout
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="vertical">
+        tools:context=".BuckConverter">
 
-        <TextView
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Buck Converter"/>
+            android:layout_height="match_parent"
+            android:orientation="vertical">
 
-        <ImageView
-            android:layout_gravity="center"
-            android:layout_width="100sp"
-            android:layout_height="100sp"
-            android:src="@drawable/buck__1_"
-            />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Buck Converter"/>
 
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Voltage"/>
+            <ImageView
+                android:layout_gravity="center"
+                android:layout_width="100sp"
+                android:layout_height="100sp"
+                android:src="@drawable/buck__1_"
+                />
 
-        <EditText
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="Enter Voltage..."/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Voltage"/>
 
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Resistance"/>
+            <EditText
+                android:id="@+id/voltage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter Voltage..."
+                android:inputType="number"/>
 
-        <EditText
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="Enter Resistnce..."/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Resistance"/>
 
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Capacitance"/>
+            <EditText
+                android:id="@+id/resistance"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter Resistance..."
+                android:inputType="number"/>
 
-        <EditText
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="Enter Capacitance..."/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Capacitance"/>
 
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Inductance"/>
+            <EditText
+                android:id="@+id/capacitance"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter Capacitance..."
+                android:inputType="number"/>
 
-        <EditText
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="Enter Inductance..."/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Inductance"/>
 
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="T_on"/>
+            <EditText
+                android:id="@+id/inductance"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter Inductance..."
+                android:inputType="number"/>
 
-        <EditText
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="Enter on time period..."/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="T_on"/>
 
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="T_off"/>
+            <EditText
+                android:id="@+id/t_on"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter on time period..."
+                android:inputType="number"/>
 
-        <EditText
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="Enter off time period..."/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="T_off"/>
 
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Initial Capacitance Voltage"/>
+            <EditText
+                android:id="@+id/t_off"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter off time period..."
+                android:inputType="number"/>
 
-        <EditText
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="0"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Initial Capacitance Voltage"/>
 
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Initial Inductor Current"/>
+            <EditText
+                android:id="@+id/vc_initial"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter"
+                android:inputType="number"/>
 
-        <EditText
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="0"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Initial Inductor Current"/>
 
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Total time for simulation"/>
+            <EditText
+                android:id="@+id/il_initial"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter"
+                android:inputType="number"/>
 
-        <EditText
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="1"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Total time for simulation"/>
 
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="57dp"
-            android:layout_gravity="center"
-            android:paddingVertical="7dp"
-            android:text="Submit" />
-    </LinearLayout>
+            <EditText
+                android:id="@+id/t_tot"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter"
+                android:inputType="number"/>
 
-</RelativeLayout>
+            <Button
+                android:id="@+id/submit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Submit"
+                android:layout_gravity="center"
+                />
+        </LinearLayout>
+
+    </RelativeLayout>
     </ScrollView>
