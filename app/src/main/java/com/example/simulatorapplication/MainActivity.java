@@ -19,8 +19,8 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
 
-                Intent i = new Intent(getApplicationContext(), BuckConverter.class);
-                startActivity(i);
+                Intent k = new Intent(getApplicationContext(), BuckConverter.class);
+                startActivity(k);
             }
         });
 

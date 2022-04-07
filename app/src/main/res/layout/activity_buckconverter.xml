@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ScrollView
     xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
-    android:fillViewport="true"> <!--IMPORTANT otherwise backgrnd img. will not fill the whole screen -->
+    android:fillViewport="true">
 
-    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-        xmlns:app="http://schemas.android.com/apk/res-auto"
-        xmlns:tools="http://schemas.android.com/tools"
+    <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:context=".BuckConverter">
+        tools:context=".BuckConvertor">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -18,133 +18,145 @@
             android:orientation="vertical">
 
             <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_marginBottom="5dp"
+                android:padding="13dp"
+                android:autoSizeTextType="uniform"
+                android:background="@color/black"
+                android:fontFamily="serif"
+                android:textAlignment="center"
+                android:textAllCaps="true"
+                android:textColor="@color/white"
+                android:textSize="35dp"
+                android:textStyle="bold"
                 android:text="Buck Converter"/>
 
             <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="300dp"
                 android:layout_gravity="center"
-                android:layout_width="100sp"
-                android:layout_height="100sp"
-                android:src="@drawable/buck__1_"
-                />
+                android:paddingRight="27dp"
+                android:src="@drawable/buck__1_" />
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Voltage"/>
+                android:text="Voltage"
+                android:textColor="@color/black"
+                android:textSize="21dp"/>
 
             <EditText
-                android:id="@+id/voltage"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="Enter Voltage..."
-                android:inputType="number"/>
+                android:hint="Enter Voltage..."/>
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Resistance"/>
+                android:text="Resistance"
+                android:textColor="@color/black"
+                android:textSize="21dp"/>
 
             <EditText
-                android:id="@+id/resistance"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="Enter Resistance..."
-                android:inputType="number"/>
+                android:hint="Enter Resistnce..."/>
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Capacitance"/>
+                android:text="Capacitance"
+                android:textColor="@color/black"
+                android:textSize="21dp"/>
 
             <EditText
-                android:id="@+id/capacitance"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="Enter Capacitance..."
-                android:inputType="number"/>
+                android:hint="Enter Capacitance..."/>
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Inductance"/>
+                android:text="Inductance"
+                android:textColor="@color/black"
+                android:textSize="21dp"/>
 
             <EditText
-                android:id="@+id/inductance"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="Enter Inductance..."
-                android:inputType="number"/>
+                android:hint="Enter Inductance..."/>
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="T_on"/>
+                android:text="T_on"
+                android:textColor="@color/black"
+                android:textSize="21dp"/>
 
             <EditText
-                android:id="@+id/t_on"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="Enter on time period..."
-                android:inputType="number"/>
+                android:hint="Enter on time period..."/>
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="T_off"/>
+                android:text="T_off"
+                android:textColor="@color/black"
+                android:textSize="21dp"/>
 
             <EditText
-                android:id="@+id/t_off"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="Enter off time period..."
-                android:inputType="number"/>
+                android:hint="Enter off time period..."/>
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Initial Capacitance Voltage"/>
+                android:text="Initial Capacitance Voltage"
+                android:textColor="@color/black"
+                android:textSize="21dp"/>
 
             <EditText
-                android:id="@+id/vc_initial"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="Enter"
-                android:inputType="number"/>
+                android:hint="0"/>
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Initial Inductor Current"/>
+                android:text="Initial Inductor Current"
+                android:textColor="@color/black"
+                android:textSize="21dp"/>
 
             <EditText
-                android:id="@+id/il_initial"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="Enter"
-                android:inputType="number"/>
+                android:hint="0"/>
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Total time for simulation"/>
+                android:text="Total time for simulation"
+                android:textColor="@color/black"
+                android:textSize="21dp"/>
 
             <EditText
-                android:id="@+id/t_tot"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="Enter"
-                android:inputType="number"/>
+                android:hint="1"/>
 
             <Button
-                android:id="@+id/submit"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Submit"
+                android:paddingVertical="7dp"
                 android:layout_gravity="center"
                 />
         </LinearLayout>
 
     </RelativeLayout>
-    </ScrollView>
+
+</ScrollView>
