@@ -103,7 +103,7 @@
                     android:layout_height="300dp"
                     android:layout_gravity="center"
                     android:paddingHorizontal="27dp"
-                    android:src="@drawable/rlc" />
+                    android:src="@drawable/rl_circuit_18_2_14_2" />
 
                 <Button
                     android:id="@+id/button2"
@@ -112,7 +112,7 @@
                     android:layout_gravity="center"
                     android:padding="17dp"
                     android:layout_marginBottom="13dp"
-                    android:text="RLC Circuit" />
+                    android:text="RL Circuit" />
 
                 <View
                     android:layout_width="fill_parent"
