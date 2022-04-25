@@ -48,8 +48,10 @@
                 android:textSize="21dp"/>
 
             <EditText
+                android:id="@+id/voltage"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:inputType="numberDecimal"
                 android:hint="Enter Voltage..."/>
 
             <TextView
@@ -60,7 +62,9 @@
                 android:textSize="21dp"/>
 
             <EditText
+                android:id="@+id/resistance"
                 android:layout_width="match_parent"
+                android:inputType="numberDecimal"
                 android:layout_height="wrap_content"
                 android:hint="Enter Resistnce..."/>
 
@@ -72,8 +76,10 @@
                 android:textSize="21dp"/>
 
             <EditText
+                android:id="@+id/capacitance"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:inputType="numberDecimal"
                 android:hint="Enter Capacitance..."/>
 
             <TextView
@@ -84,8 +90,10 @@
                 android:textSize="21dp"/>
 
             <EditText
+                android:id="@+id/inductance"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:inputType="numberDecimal"
                 android:hint="Enter Inductance..."/>
 
             <TextView
@@ -96,8 +104,10 @@
                 android:textSize="21dp"/>
 
             <EditText
+                android:id="@+id/t_on"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:inputType="numberDecimal"
                 android:hint="Enter on time period..."/>
 
             <TextView
@@ -108,8 +118,10 @@
                 android:textSize="21dp"/>
 
             <EditText
+                android:id="@+id/t_off"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:inputType="numberDecimal"
                 android:hint="Enter off time period..."/>
 
             <TextView
@@ -120,8 +132,10 @@
                 android:textSize="21dp"/>
 
             <EditText
+                android:id="@+id/vc_initial"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:inputType="numberDecimal"
                 android:hint="0"/>
 
             <TextView
@@ -132,8 +146,10 @@
                 android:textSize="21dp"/>
 
             <EditText
+                android:id="@+id/il_initial"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:inputType="numberDecimal"
                 android:hint="0"/>
 
             <TextView
@@ -144,14 +160,17 @@
                 android:textSize="21dp"/>
 
             <EditText
+                android:id="@+id/t_tot"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:inputType="numberDecimal"
                 android:hint="1"/>
 
             <Button
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Submit"
+                android:id="@+id/submit"
                 android:paddingVertical="7dp"
                 android:layout_gravity="center"
                 />

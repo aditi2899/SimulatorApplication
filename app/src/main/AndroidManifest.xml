@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.simulatorapplication" >
+    package="com.example.simulatorapplication">
 
     <application
         android:allowBackup="true"
@@ -8,9 +8,30 @@
         android:label="@string/app_name"
         android:roundIcon="@drawable/boost__1_"
         android:supportsRtl="true"
-        android:theme="@style/Theme.SimulatorApplication" >
+        android:theme="@style/Theme.SimulatorApplication">
+        <activity
+            android:name=".BuckIl_T"
+            android:exported="false" />
+        <activity
+            android:name=".BuckIo_T"
+            android:exported="false" />
+        <activity
+            android:name=".BuckVl_T"
+            android:exported="false" />
+        <activity
+            android:name=".BuckVc_T"
+            android:exported="false" />
+        <activity
+            android:name=".lineChart1"
+            android:exported="false" />
         <activity
             android:name=".resultBuck"
+            android:exported="false" />
+        <activity
+            android:name=".pie_chart"
+            android:exported="false" />
+        <activity
+            android:name=".bar_chart"
             android:exported="false" />
         <activity
             android:name=".BoostConvertor"
@@ -20,7 +41,7 @@
             android:exported="false" />
         <activity
             android:name=".MainActivity"
-            android:exported="true" >
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
