@@ -19,32 +19,22 @@ public class BuckConverter extends AppCompatActivity {
         setContentView(R.layout.activity_buckconverter);
 
         Volt = (EditText) findViewById(R.id.voltage);
-        //int V = Integer.parseInt(Volt.getText().toString());
 
         Res = (EditText) findViewById(R.id.resistance);
-//        int Res = Integer.parseInt(res.getText().toString());
-//
-        Cap = (EditText) findViewById(R.id.capacitance);
-//        int C = Integer.parseInt(Cap.getText().toString());
-//
-        Ind = (EditText) findViewById(R.id.inductance);
-//        int I = Integer.parseInt(Ind.getText().toString());
-//
-        On = (EditText) findViewById(R.id.t_on);
-//        int T_On = Integer.parseInt(On.getText().toString());
-//
-        Off = (EditText) findViewById(R.id.t_off);
-//        int T_Off = Integer.parseInt(Off.getText().toString());
-//
-        vc_i = (EditText) findViewById(R.id.vc_initial);
-//        int Vc_initial = Integer.parseInt(vc_i.getText().toString());
-//
-        il_i = (EditText) findViewById(R.id.il_initial);
-//        int Il_initial = Integer.parseInt(il_i.getText().toString());
-//
-        tot = (EditText) findViewById(R.id.t_tot);
-//        int T_tot = Integer.parseInt(tot.getText().toString());
 
+        Cap = (EditText) findViewById(R.id.capacitance);
+
+        Ind = (EditText) findViewById(R.id.inductance);
+
+        On = (EditText) findViewById(R.id.t_on);
+
+        Off = (EditText) findViewById(R.id.t_off);
+
+        vc_i = (EditText) findViewById(R.id.vc_initial);
+
+        il_i = (EditText) findViewById(R.id.il_initial);
+
+        tot = (EditText) findViewById(R.id.t_tot);
 
         Button btn = findViewById(R.id.submit);
         btn.setOnClickListener(new View.OnClickListener() {
@@ -71,10 +61,53 @@ public class BuckConverter extends AppCompatActivity {
                 bundle.putString("Vc_i",Vc_initial);
                 bundle.putString("Il_i",Il_initial);
                 bundle.putString("Tot",T_tot);
-                Intent i = new Intent(getApplicationContext(), resultBuck.class);
-                i.putExtras(bundle);
-                //               i.putExtra("Voltage", V);
-                startActivity(i);
+                if( V.isEmpty() || res.isEmpty() || C.isEmpty()  || I.isEmpty()  || T_on.isEmpty()  || T_off.isEmpty()  || Vc_initial.isEmpty()  || Il_initial.isEmpty()  || T_tot.isEmpty()){
+
+                    if( V.isEmpty())
+                    {
+                        Volt.setError( "Required field " );
+                    }
+                    if( res.isEmpty())
+                    {
+                        Res.setError( "Required field " );
+                    }
+                    if( C.isEmpty())
+                    {
+                        Cap.setError( "Required field " );
+                    }
+                    if( I.isEmpty())
+                    {
+                        Ind.setError( "Required field " );
+                    }
+                    if( T_on.isEmpty())
+                    {
+                        On.setError( "Required field " );
+                    }
+                    if( T_off.isEmpty())
+                    {
+                        Off.setError( "Required field " );
+                    }
+                    if( Vc_initial.isEmpty())
+                    {
+                        vc_i.setError( "Required field " );
+                    }
+                    if( Il_initial.isEmpty())
+                    {
+                        il_i.setError( "Required field " );
+                    }
+                    if( T_tot.isEmpty())
+                    {
+                        tot.setError( "Required field " );
+                    }
+                }
+                else
+                {
+                    // add result file
+//                    Intent i = new Intent(getApplicationContext(), resultBuck.class);
+//                    i.putExtras(bundle);
+//                    startActivity(i);
+                }
+
             }
         });
     }

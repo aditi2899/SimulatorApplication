@@ -38,10 +38,28 @@ public class RL_Circuit extends AppCompatActivity {
                 bundle.putString("Voltage",V);
                 bundle.putString("Resistance",res);
                 bundle.putString("Inductance",I);
-                // add result file
-//                Intent i = new Intent(getApplicationContext(), resultBuck.class);
-//                i.putExtras(bundle);
-//                startActivity(i);
+                if( V.isEmpty() || res.isEmpty() || I.isEmpty()){
+
+                    if( V.isEmpty())
+                    {
+                        Volt.setError( "Required field " );
+                    }
+                    if( res.isEmpty())
+                    {
+                        Res.setError( "Required field " );
+                    }
+                    if( I.isEmpty())
+                    {
+                        Ind.setError( "Required field " );
+                    }
+                }
+                else
+                {
+                    //add result file
+//                    Intent i = new Intent(getApplicationContext(), resultBuck.class);
+//                    i.putExtras(bundle);
+//                    startActivity(i);
+                }
             }
         });
     }

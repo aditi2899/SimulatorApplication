@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ScrollView
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="fill_parent"
-    android:layout_height="fill_parent"
-    android:fillViewport="true">
+xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="fill_parent"
+android:layout_height="fill_parent"
+android:fillViewport="true">
 
-    <RelativeLayout
-        android:layout_width="match_parent"
+<RelativeLayout
+    android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".BoostConvertor">
 
@@ -31,7 +31,7 @@
             android:textColor="@color/white"
             android:textSize="35dp"
             android:textStyle="bold"
-            android:text="Boost Converter"/>
+            android:text="Buck Converter"/>
 
         <ImageView
             android:layout_width="fill_parent"
@@ -48,68 +48,80 @@
             android:textSize="21dp"/>
 
         <EditText
+            android:id="@+id/voltage"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:inputType="numberDecimal"
             android:hint="Enter Voltage..."/>
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Resistance"
+            android:text="Resistance(ohm)"
             android:textColor="@color/black"
             android:textSize="21dp"/>
 
         <EditText
+            android:id="@+id/resistance"
             android:layout_width="match_parent"
+            android:inputType="numberDecimal"
             android:layout_height="wrap_content"
             android:hint="Enter Resistnce..."/>
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Capacitance"
+            android:text="Capacitance(in micro F)"
             android:textColor="@color/black"
             android:textSize="21dp"/>
 
         <EditText
+            android:id="@+id/capacitance"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:inputType="numberDecimal"
             android:hint="Enter Capacitance..."/>
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Inductance"
+            android:text="Inductance(in milli H)"
             android:textColor="@color/black"
             android:textSize="21dp"/>
 
         <EditText
+            android:id="@+id/inductance"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:inputType="numberDecimal"
             android:hint="Enter Inductance..."/>
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="T_on"
+            android:text="T_on(in milli sec)"
             android:textColor="@color/black"
             android:textSize="21dp"/>
 
         <EditText
+            android:id="@+id/t_on"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:inputType="numberDecimal"
             android:hint="Enter on time period..."/>
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="T_off"
+            android:text="T_off(in milli sec)"
             android:textColor="@color/black"
             android:textSize="21dp"/>
 
         <EditText
+            android:id="@+id/t_off"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:inputType="numberDecimal"
             android:hint="Enter off time period..."/>
 
         <TextView
@@ -120,9 +132,11 @@
             android:textSize="21dp"/>
 
         <EditText
+            android:id="@+id/vc_initial"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="0"/>
+            android:inputType="numberDecimal"
+            android:hint="Enter initial Capacitor Voltage"/>
 
         <TextView
             android:layout_width="match_parent"
@@ -132,9 +146,11 @@
             android:textSize="21dp"/>
 
         <EditText
+            android:id="@+id/il_initial"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="0"/>
+            android:inputType="numberDecimal"
+            android:hint="Enter initial Inductance Current"/>
 
         <TextView
             android:layout_width="match_parent"
@@ -144,14 +160,17 @@
             android:textSize="21dp"/>
 
         <EditText
+            android:id="@+id/t_tot"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="1"/>
+            android:inputType="numberDecimal"
+            android:hint="Enter Total Time"/>
 
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Submit"
+            android:id="@+id/submit"
             android:paddingVertical="7dp"
             android:layout_gravity="center"
             />
@@ -159,4 +178,4 @@
 
 </RelativeLayout>
 
-    </ScrollView>
+</ScrollView>

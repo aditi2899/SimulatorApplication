@@ -57,7 +57,7 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Resistance"
+                android:text="Resistance(ohm)"
                 android:textColor="@color/black"
                 android:textSize="21dp"/>
 
@@ -71,7 +71,7 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Capacitance"
+                android:text="Capacitance(in micro F)"
                 android:textColor="@color/black"
                 android:textSize="21dp"/>
 
@@ -85,7 +85,7 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Inductance"
+                android:text="Inductance(in milli H)"
                 android:textColor="@color/black"
                 android:textSize="21dp"/>
 
@@ -99,7 +99,7 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="T_on"
+                android:text="T_on(in milli sec)"
                 android:textColor="@color/black"
                 android:textSize="21dp"/>
 
@@ -113,7 +113,7 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="T_off"
+                android:text="T_off(in milli sec)"
                 android:textColor="@color/black"
                 android:textSize="21dp"/>
 
@@ -136,7 +136,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:inputType="numberDecimal"
-                android:hint="0"/>
+                android:hint="Enter initial Capacitor Voltage"/>
 
             <TextView
                 android:layout_width="match_parent"
@@ -150,7 +150,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:inputType="numberDecimal"
-                android:hint="0"/>
+                android:hint="Enter initial Inductance Current"/>
 
             <TextView
                 android:layout_width="match_parent"
@@ -164,7 +164,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:inputType="numberDecimal"
-                android:hint="1"/>
+                android:hint="Enter Total Time"/>
 
             <Button
                 android:layout_width="wrap_content"

@@ -38,10 +38,29 @@ public class RC_Circuit extends AppCompatActivity {
                 bundle.putString("Voltage",V);
                 bundle.putString("Resistance",res);
                 bundle.putString("Capacitance",C);
-                //add result file
-//                Intent i = new Intent(getApplicationContext(), resultBuck.class);
-//                i.putExtras(bundle);
-//                startActivity(i);
+                if( V.isEmpty() || res.isEmpty() || C.isEmpty()){
+
+                    if( V.isEmpty())
+                    {
+                        Volt.setError( "Required field " );
+                    }
+                    if( res.isEmpty())
+                    {
+                        Res.setError( "Required field " );
+                    }
+                    if( C.isEmpty())
+                    {
+                        Cap.setError( "Required field " );
+                    }
+                }
+                else
+                {
+                    //add result file
+//                    Intent i = new Intent(getApplicationContext(), resultBuck.class);
+//                    i.putExtras(bundle);
+//                    startActivity(i);
+                }
+
             }
         });
     }
