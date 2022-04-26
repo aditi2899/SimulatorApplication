@@ -44,6 +44,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Voltage"
+                android:layout_marginLeft="5dp"
                 android:textColor="@color/black"
                 android:textSize="21dp"/>
 
@@ -51,6 +52,7 @@
                 android:id="@+id/voltage"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
                 android:inputType="numberDecimal"
                 android:hint="Enter Voltage..."/>
 
@@ -58,6 +60,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Resistance"
+                android:layout_marginLeft="5dp"
                 android:textColor="@color/black"
                 android:textSize="21dp"/>
 
@@ -66,12 +69,14 @@
                 android:layout_width="match_parent"
                 android:inputType="numberDecimal"
                 android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
                 android:hint="Enter Resistnce..."/>
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Capacitance"
+                android:layout_marginLeft="5dp"
                 android:textColor="@color/black"
                 android:textSize="21dp"/>
 
@@ -79,6 +84,7 @@
                 android:id="@+id/capacitance"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
                 android:inputType="numberDecimal"
                 android:hint="Enter Capacitance..."/>
 
