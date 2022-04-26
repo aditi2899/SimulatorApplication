@@ -11,9 +11,7 @@ package com.example.simulatorapplication;
 
 public class RL_Circuit extends AppCompatActivity {
 
-
-    //public static int V;
-    EditText Volt, Res,Cap,Ind,On,Off,vc_i,il_i,tot;
+    EditText Volt, Res,Ind;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

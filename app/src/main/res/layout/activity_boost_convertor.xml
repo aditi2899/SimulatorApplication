@@ -31,7 +31,7 @@ android:fillViewport="true">
             android:textColor="@color/white"
             android:textSize="35dp"
             android:textStyle="bold"
-            android:text="Buck Converter"/>
+            android:text="Boost Converter"/>
 
         <ImageView
             android:layout_width="fill_parent"

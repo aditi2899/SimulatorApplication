@@ -1,3 +1,4 @@
+
 package com.example.simulatorapplication;
 
         import androidx.appcompat.app.AppCompatActivity;
@@ -21,13 +22,13 @@ package com.example.simulatorapplication;
         import java.util.Map;
 
 
-public class BuckVc_T<VerticalTextView> extends AppCompatActivity {
+public class BoostVl_T<VerticalTextView> extends AppCompatActivity {
 
     LineChart mpLineChart;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_buck_vc_t);
+        setContentView(R.layout.activity_boost_vl_t);
         mpLineChart = (LineChart) findViewById(R.id.lineChart);
         LineDataSet lineDataSet1 = new LineDataSet(dataValues1(), "Data Set 1");
         ArrayList<ILineDataSet> dataSets = new ArrayList<>();
@@ -66,27 +67,31 @@ public class BuckVc_T<VerticalTextView> extends AppCompatActivity {
         float vc_i= Float.parseFloat(Vc_initial);
         float il_i= Float.parseFloat(Il_initial);
         float t_tot= Float.parseFloat(T_tot);
-        dataVals.add(new Entry(0, vc_i));
+        dataVals.add(new Entry(0, 0));
         float Vl,Il=0,Io,Vc;
         float dt= (float) .000001;
         float last_Vc=vc_i,last_Il=il_i;
         for (double t = .000001; t <= t_tot; t += .000001) {
             float x = (float) t;
-            float modu = x%(on+off);
+            float modu = x%(on+off),Ic;
 
 
             if(modu<=on){
-                Vl=v-last_Vc;
+                Vl=v;
+                Ic=-last_Vc/r;
             }
             else{
-                Vl=-last_Vc;
+                Vl=v-last_Vc;
+                Ic=last_Il-(last_Vc/r);
             }
+
             Il=last_Il+((Vl*dt)/ind);
-            Io=last_Vc/r;
-            Vc=last_Vc+((Il-last_Vc/r)*dt/c);
-            dataVals.add(new Entry(x, Vc));
+            Vc=last_Vc+((Ic/c)*dt);
+            Io=Vc/r;
+            dataVals.add(new Entry(x, Vl));
             last_Vc=Vc;
             last_Il=Il;
+
         }
         return dataVals;
     }

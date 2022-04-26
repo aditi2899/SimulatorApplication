@@ -10,6 +10,21 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.SimulatorApplication">
         <activity
+            android:name=".BoostVl_T"
+            android:exported="false" />
+        <activity
+            android:name=".BoostVc_T"
+            android:exported="false" />
+        <activity
+            android:name=".BoostIo_T"
+            android:exported="false" />
+        <activity
+            android:name=".BoostIl_T"
+            android:exported="false" />
+        <activity
+            android:name=".resultBoost"
+            android:exported="false" />
+        <activity
             android:name=".RL_Circuit"
             android:exported="false" />
         <activity

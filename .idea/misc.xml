@@ -5,31 +5,20 @@
       <map>
         <entry key="..\:/Users/dell/AndroidStudioProjects/SimulatorApplication/app/src/main/res/drawable/image1.xml" value="0.2265" />
         <entry key="..\:/Users/dell/AndroidStudioProjects/SimulatorApplication/app/src/main/res/layout/activity_boost_convertor.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/dell/AndroidStudioProjects/SimulatorApplication/app/src/main/res/layout/activity_boost_il_t.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/dell/AndroidStudioProjects/SimulatorApplication/app/src/main/res/layout/activity_boost_io_t.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/dell/AndroidStudioProjects/SimulatorApplication/app/src/main/res/layout/activity_boost_vc_t.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/dell/AndroidStudioProjects/SimulatorApplication/app/src/main/res/layout/activity_boost_vl_t.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/dell/AndroidStudioProjects/SimulatorApplication/app/src/main/res/layout/activity_buck_il_t.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/dell/AndroidStudioProjects/SimulatorApplication/app/src/main/res/layout/activity_buck_io_t.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/dell/AndroidStudioProjects/SimulatorApplication/app/src/main/res/layout/activity_buck_vc_t.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/dell/AndroidStudioProjects/SimulatorApplication/app/src/main/res/layout/activity_buck_vl_t.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/dell/AndroidStudioProjects/SimulatorApplication/app/src/main/res/layout/activity_buckconverter.xml" value="0.1" />
         <entry key="..\:/Users/dell/AndroidStudioProjects/SimulatorApplication/app/src/main/res/layout/activity_form1.xml" value="0.21784420289855072" />
-<<<<<<< Updated upstream
         <entry key="..\:/Users/dell/AndroidStudioProjects/SimulatorApplication/app/src/main/res/layout/activity_main.xml" value="0.3197969543147208" />
         <entry key="..\:/Users/dell/AndroidStudioProjects/SimulatorApplication/app/src/main/res/layout/activity_rc_circuit.xml" value="0.11302083333333333" />
         <entry key="..\:/Users/dell/AndroidStudioProjects/SimulatorApplication/app/src/main/res/layout/activity_result_buck.xml" value="0.1" />
         <entry key="..\:/Users/dell/AndroidStudioProjects/SimulatorApplication/app/src/main/res/layout/activity_rl_circuit.xml" value="0.25416666666666665" />
-=======
-        <entry key="..\:/Users/dell/AndroidStudioProjects/SimulatorApplication/app/src/main/res/layout/activity_main.xml" value="0.37720111214087115" />
-        <entry key="app/src/main/res/layout/activity_bar_chart.xml" value="0.2375" />
-        <entry key="app/src/main/res/layout/activity_boost_convertor.xml" value="0.1" />
-        <entry key="app/src/main/res/layout/activity_buck_il_t.xml" value="0.16458333333333333" />
-        <entry key="app/src/main/res/layout/activity_buck_io_t.xml" value="0.16458333333333333" />
-        <entry key="app/src/main/res/layout/activity_buck_vc_t.xml" value="0.16458333333333333" />
-        <entry key="app/src/main/res/layout/activity_buck_vl_t.xml" value="0.16458333333333333" />
-        <entry key="app/src/main/res/layout/activity_buckconverter.xml" value="0.335" />
-        <entry key="app/src/main/res/layout/activity_graph.xml" value="0.2515625" />
-        <entry key="app/src/main/res/layout/activity_line_chart.xml" value="0.2375" />
-        <entry key="app/src/main/res/layout/activity_line_chart1.xml" value="0.16458333333333333" />
-        <entry key="app/src/main/res/layout/activity_line_chart2.xml" value="0.2375" />
-        <entry key="app/src/main/res/layout/activity_main.xml" value="0.1" />
-        <entry key="app/src/main/res/layout/activity_pie_chart.xml" value="0.2515625" />
-        <entry key="app/src/main/res/layout/activity_result_buck.xml" value="0.2515625" />
-        <entry key="app/src/main/res/layout/activity_test.xml" value="0.15052083333333333" />
->>>>>>> Stashed changes
       </map>
     </option>
   </component>

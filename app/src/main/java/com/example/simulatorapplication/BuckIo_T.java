@@ -66,7 +66,7 @@ public class BuckIo_T extends AppCompatActivity {
         float vc_i= Float.parseFloat(Vc_initial);
         float il_i= Float.parseFloat(Il_initial);
         float t_tot= Float.parseFloat(T_tot);
-        dataVals.add(new Entry(0, vc_i));
+        dataVals.add(new Entry(0, 0));
         float Vl,Il=0,Io,Vc;
         float dt= (float) .000001;
         float last_Vc=vc_i,last_Il=il_i;

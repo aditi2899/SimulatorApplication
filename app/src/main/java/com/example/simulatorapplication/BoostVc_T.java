@@ -21,13 +21,13 @@ package com.example.simulatorapplication;
         import java.util.Map;
 
 
-public class BuckVc_T<VerticalTextView> extends AppCompatActivity {
+public class BoostVc_T<VerticalTextView> extends AppCompatActivity {
 
     LineChart mpLineChart;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_buck_vc_t);
+        setContentView(R.layout.activity_boost_vc_t);
         mpLineChart = (LineChart) findViewById(R.id.lineChart);
         LineDataSet lineDataSet1 = new LineDataSet(dataValues1(), "Data Set 1");
         ArrayList<ILineDataSet> dataSets = new ArrayList<>();
@@ -72,21 +72,25 @@ public class BuckVc_T<VerticalTextView> extends AppCompatActivity {
         float last_Vc=vc_i,last_Il=il_i;
         for (double t = .000001; t <= t_tot; t += .000001) {
             float x = (float) t;
-            float modu = x%(on+off);
+            float modu = x%(on+off),Ic;
 
 
             if(modu<=on){
-                Vl=v-last_Vc;
+                Vl=v;
+                Ic=-last_Vc/r;
             }
             else{
-                Vl=-last_Vc;
+                Vl=v-last_Vc;
+                Ic=last_Il-(last_Vc/r);
             }
+
             Il=last_Il+((Vl*dt)/ind);
-            Io=last_Vc/r;
-            Vc=last_Vc+((Il-last_Vc/r)*dt/c);
+            Vc=last_Vc+((Ic/c)*dt);
+            Io=Vc/r;
             dataVals.add(new Entry(x, Vc));
             last_Vc=Vc;
             last_Il=Il;
+
         }
         return dataVals;
     }

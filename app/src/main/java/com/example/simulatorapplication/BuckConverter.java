@@ -10,8 +10,6 @@ import android.widget.EditText;
 
 public class BuckConverter extends AppCompatActivity {
 
-
-    //public static int V;
     EditText Volt, Res,Cap,Ind,On,Off,vc_i,il_i,tot;
     @Override
     protected void onCreate(Bundle savedInstanceState) {

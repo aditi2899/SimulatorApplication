@@ -11,9 +11,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 public class RC_Circuit extends AppCompatActivity {
 
-
-    //public static int V;
-    EditText Volt, Res,Cap,Ind,On,Off,vc_i,il_i,tot;
+    EditText Volt, Res,Cap;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

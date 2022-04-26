@@ -51,12 +51,7 @@ public class BuckIl_T extends AppCompatActivity {
         String Il_initial=intent.getStringExtra("Il_i");
         String T_tot=intent.getStringExtra("Tot");
         ArrayList<Entry> dataVals = new ArrayList<Entry>();
-//        float V = 10;
-//        double Res = 5;
-//        double L = 0.2 * .001;
-//        double C = 100 * .000001;
-//        double Ton = 0.1 * .001;
-//        double Toff = 0.1 * .001;
+
         float v= Float.parseFloat(V);
         float r= Float.parseFloat(res);
         float c= (float) (Float.parseFloat(C) * .000001);
@@ -66,7 +61,8 @@ public class BuckIl_T extends AppCompatActivity {
         float vc_i= Float.parseFloat(Vc_initial);
         float il_i= Float.parseFloat(Il_initial);
         float t_tot= Float.parseFloat(T_tot);
-        dataVals.add(new Entry(0, vc_i));
+
+        dataVals.add(new Entry(0, il_i));
         float Vl,Il=0,Io,Vc;
         float dt= (float) .000001;
         float last_Vc=vc_i,last_Il=il_i;

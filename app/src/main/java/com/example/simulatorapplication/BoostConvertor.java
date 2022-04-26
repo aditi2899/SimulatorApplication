@@ -11,8 +11,6 @@ package com.example.simulatorapplication;
 
 public class BoostConvertor extends AppCompatActivity {
 
-
-    //public static int V;
     EditText Volt, Res,Cap,Ind,On,Off,vc_i,il_i,tot;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -20,32 +18,22 @@ public class BoostConvertor extends AppCompatActivity {
         setContentView(R.layout.activity_boost_convertor);
 
         Volt = (EditText) findViewById(R.id.voltage);
-        //int V = Integer.parseInt(Volt.getText().toString());
 
         Res = (EditText) findViewById(R.id.resistance);
-//        int Res = Integer.parseInt(res.getText().toString());
-//
-        Cap = (EditText) findViewById(R.id.capacitance);
-//        int C = Integer.parseInt(Cap.getText().toString());
-//
-        Ind = (EditText) findViewById(R.id.inductance);
-//        int I = Integer.parseInt(Ind.getText().toString());
-//
-        On = (EditText) findViewById(R.id.t_on);
-//        int T_On = Integer.parseInt(On.getText().toString());
-//
-        Off = (EditText) findViewById(R.id.t_off);
-//        int T_Off = Integer.parseInt(Off.getText().toString());
-//
-        vc_i = (EditText) findViewById(R.id.vc_initial);
-//        int Vc_initial = Integer.parseInt(vc_i.getText().toString());
-//
-        il_i = (EditText) findViewById(R.id.il_initial);
-//        int Il_initial = Integer.parseInt(il_i.getText().toString());
-//
-        tot = (EditText) findViewById(R.id.t_tot);
-//        int T_tot = Integer.parseInt(tot.getText().toString());
 
+        Cap = (EditText) findViewById(R.id.capacitance);
+
+        Ind = (EditText) findViewById(R.id.inductance);
+
+        On = (EditText) findViewById(R.id.t_on);
+
+        Off = (EditText) findViewById(R.id.t_off);
+
+        vc_i = (EditText) findViewById(R.id.vc_initial);
+
+        il_i = (EditText) findViewById(R.id.il_initial);
+
+        tot = (EditText) findViewById(R.id.t_tot);
 
         Button btn = findViewById(R.id.submit);
         btn.setOnClickListener(new View.OnClickListener() {
@@ -113,7 +101,7 @@ public class BoostConvertor extends AppCompatActivity {
                 }
                 else
                 {
-                    Intent i = new Intent(getApplicationContext(), resultBuck.class);
+                    Intent i = new Intent(getApplicationContext(), resultBoost.class);
                     i.putExtras(bundle);
                     startActivity(i);
                 }
