@@ -2,11 +2,16 @@ package com.example.simulatorapplication;
 
         import androidx.appcompat.app.AppCompatActivity;
 
+        import android.content.Context;
         import android.content.Intent;
+        import android.graphics.Color;
         import android.os.Bundle;
-        import android.util.Log;
+
 
         import com.github.mikephil.charting.charts.LineChart;
+        import com.github.mikephil.charting.components.LimitLine;
+        import com.github.mikephil.charting.components.XAxis;
+        import com.github.mikephil.charting.components.YAxis;
         import com.github.mikephil.charting.data.Entry;
         import com.github.mikephil.charting.data.LineData;
         import com.github.mikephil.charting.data.LineDataSet;
@@ -16,10 +21,9 @@ package com.example.simulatorapplication;
         import java.util.Map;
 
 
-public class BuckVc_T extends AppCompatActivity {
+public class BuckVc_T<VerticalTextView> extends AppCompatActivity {
 
     LineChart mpLineChart;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -28,12 +32,18 @@ public class BuckVc_T extends AppCompatActivity {
         LineDataSet lineDataSet1 = new LineDataSet(dataValues1(), "Data Set 1");
         ArrayList<ILineDataSet> dataSets = new ArrayList<>();
         dataSets.add(lineDataSet1);
-
+        XAxis xAxis = mpLineChart.getXAxis();
+        xAxis.setPosition(XAxis.XAxisPosition.BOTTOM);
+//        xAxis.enableGridDashedLine(1,1,0);
+//        xAxis.setTypeface(t);
+//        xAxis.setDrawLabels(true);
+//        xAxis.setDrawGridLines(false);
         LineData data = new LineData(dataSets);
         mpLineChart.setData(data);
         mpLineChart.invalidate();
 
     }
+
 
 
     private ArrayList<Entry> dataValues1() {

@@ -8,6 +8,7 @@ package com.example.simulatorapplication;
         import android.util.Log;
 
         import com.github.mikephil.charting.charts.LineChart;
+        import com.github.mikephil.charting.components.XAxis;
         import com.github.mikephil.charting.data.Entry;
         import com.github.mikephil.charting.data.LineData;
         import com.github.mikephil.charting.data.LineDataSet;
@@ -29,7 +30,8 @@ public class BuckIl_T extends AppCompatActivity {
         LineDataSet lineDataSet1 = new LineDataSet(dataValues1(), "Data Set 1");
         ArrayList<ILineDataSet> dataSets = new ArrayList<>();
         dataSets.add(lineDataSet1);
-
+        XAxis xAxis = mpLineChart.getXAxis();
+        xAxis.setPosition(XAxis.XAxisPosition.BOTTOM);
         LineData data = new LineData(dataSets);
         mpLineChart.setData(data);
         mpLineChart.invalidate();

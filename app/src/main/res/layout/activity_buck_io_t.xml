@@ -9,6 +9,7 @@
 
     <com.github.mikephil.charting.charts.LineChart
         android:id="@+id/lineChart"
+        android:layout_margin="25dp"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
     </com.github.mikephil.charting.charts.LineChart>
@@ -16,8 +17,8 @@
     <TextView
         android:id="@+id/display"
         android:layout_width="match_parent"
+        android:text="Io vs t"
         android:layout_height="wrap_content"
-        android:text="Voltage"
         android:textColor="@color/black"
         android:textSize="21dp"/>
 
