@@ -34,7 +34,8 @@ public class RlI_T extends AppCompatActivity {
 
         v= Float.parseFloat(V);
         r= Float.parseFloat(res);
-        ind= (float) (Float.parseFloat(I)* .001);
+        ind=Float.parseFloat(I);
+        //ind= (float) (Float.parseFloat(I)* .001);
         LineDataSet lineDataSet1 = new LineDataSet(dataValues1(), "I vs T");
         ArrayList<ILineDataSet> dataSets = new ArrayList<>();
         dataSets.add(lineDataSet1);
@@ -55,8 +56,9 @@ public class RlI_T extends AppCompatActivity {
         float dt= (float) .000001;
         for (double t = 0; t <= 50; t += .1) {
             float x = (float) t;
-            float expo= (float) Math.exp((-1*r*x)/ind);
-            dataVals.add(new Entry(x, I*expo));
+            float powe=((float) (-1)*r*x)/ind;
+            double expo=  Math.exp((double) powe);
+            dataVals.add(new Entry(x, I*((float) 1-(float)expo)));
         }
         return dataVals;
     }

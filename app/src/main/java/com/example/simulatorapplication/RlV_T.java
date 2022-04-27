@@ -34,8 +34,9 @@ public class RlV_T extends AppCompatActivity {
 
         v= Float.parseFloat(V);
         r= Float.parseFloat(res);
-        ind= (float) (Float.parseFloat(I)* .001);
-        LineDataSet lineDataSet1 = new LineDataSet(dataValues1(), "I vs T");
+        ind=Float.parseFloat(I);
+        //ind= (float) (Float.parseFloat(I)* .001);
+        LineDataSet lineDataSet1 = new LineDataSet(dataValues1(), "V vs T");
         ArrayList<ILineDataSet> dataSets = new ArrayList<>();
         dataSets.add(lineDataSet1);
         XAxis xAxis = mpLineChart.getXAxis();
@@ -55,11 +56,9 @@ public class RlV_T extends AppCompatActivity {
         float dt= (float) .000001;
         for (double t = 0; t <= 50; t += .1) {
             float x = (float) t;
-            float powe=-((float) (-1)*r*x)/ind;
+            float powe=((float) (-1)*r*x)/ind;
             double expo=  Math.exp((double) powe);
-            dataVals.add(new Entry(x, (float) expo));
-
-            //dataVals.add(new Entry(x, v*expo));
+            dataVals.add(new Entry(x, v*(float) expo));
         }
         return dataVals;
     }
