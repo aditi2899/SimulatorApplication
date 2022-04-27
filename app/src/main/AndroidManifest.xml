@@ -10,6 +10,30 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.SimulatorApplication">
         <activity
+            android:name=".RlAll"
+            android:exported="false" />
+        <activity
+            android:name=".RcAll"
+            android:exported="false" />
+        <activity
+            android:name=".RlI_T"
+            android:exported="false" />
+        <activity
+            android:name=".RlV_T"
+            android:exported="false" />
+        <activity
+            android:name=".RcI_T"
+            android:exported="false" />
+        <activity
+            android:name=".RcV_T"
+            android:exported="false" />
+        <activity
+            android:name=".resultRL"
+            android:exported="false" />
+        <activity
+            android:name=".resultRC"
+            android:exported="false" />
+        <activity
             android:name=".BoostAll"
             android:exported="false" />
         <activity

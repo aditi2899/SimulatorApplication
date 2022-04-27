@@ -5,41 +5,27 @@ android:layout_width="match_parent"
 android:layout_height="match_parent"
 android:gravity="center"
 android:orientation="vertical"
-tools:context=".resultBoost">
+tools:context=".resultRC">
 
 <Button
     android:id="@+id/btna"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:layout_margin="10dp"
-    android:text="Output/Capacitor Voltage vs Time" />
+    android:text="Current vs Time" />
 
 <Button
     android:id="@+id/btnb"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:layout_margin="10dp"
-    android:text="Inductor Voltage vs Time" />
+    android:text="Voltage vs Time" />
 
 <Button
     android:id="@+id/btnc"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:layout_margin="10dp"
-    android:text="Load Current vs Time" />
-
-<Button
-    android:id="@+id/btnd"
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:layout_margin="10dp"
-    android:text="Inductor Current vs Time" />
-
-<Button
-    android:id="@+id/btne"
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:layout_margin="10dp"
-    android:text="Line Chart 2 Demo" />
+    android:text="All in one" />
 
 </LinearLayout>

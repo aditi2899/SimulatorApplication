@@ -43,7 +43,7 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Voltage"
+                android:text="Voltage (V)"
                 android:layout_marginLeft="5dp"
                 android:textColor="@color/black"
                 android:textSize="21dp"/>
@@ -54,12 +54,12 @@
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="5dp"
                 android:inputType="numberDecimal"
-                android:hint="Enter Voltage..."/>
+                android:hint="Enter value..."/>
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Resistance"
+                android:text="Resistance (Ω)"
                 android:layout_marginLeft="5dp"
                 android:textColor="@color/black"
                 android:textSize="21dp"/>
@@ -70,12 +70,12 @@
                 android:inputType="numberDecimal"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="5dp"
-                android:hint="Enter Resistnce..."/>
+                android:hint="Enter value..."/>
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Capacitance"
+                android:text="Capacitance (µF)"
                 android:layout_marginLeft="5dp"
                 android:textColor="@color/black"
                 android:textSize="21dp"/>
@@ -86,7 +86,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="5dp"
                 android:inputType="numberDecimal"
-                android:hint="Enter Capacitance..."/>
+                android:hint="Enter value..."/>
 
 
             <Button

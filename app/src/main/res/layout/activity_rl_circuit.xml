@@ -43,7 +43,7 @@ android:fillViewport="false">
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Voltage"
+            android:text="Voltage (V)"
             android:layout_marginLeft="5dp"
             android:textColor="@color/black"
             android:textSize="21dp"/>
@@ -54,12 +54,12 @@ android:fillViewport="false">
             android:layout_height="wrap_content"
             android:inputType="numberDecimal"
             android:layout_marginLeft="5dp"
-            android:hint="Enter Voltage..."/>
+            android:hint="Enter value..."/>
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Resistance"
+            android:text="Resistance (Ω)"
             android:layout_marginLeft="5dp"
             android:textColor="@color/black"
             android:textSize="21dp"/>
@@ -70,12 +70,12 @@ android:fillViewport="false">
             android:inputType="numberDecimal"
             android:layout_marginLeft="5dp"
             android:layout_height="wrap_content"
-            android:hint="Enter Resistnce..."/>
+            android:hint="Enter value..."/>
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Inductance"
+            android:text="Inductance (mH)"
             android:layout_marginLeft="5dp"
             android:textColor="@color/black"
             android:textSize="21dp"/>
@@ -86,7 +86,7 @@ android:fillViewport="false">
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:inputType="numberDecimal"
-            android:hint="Enter Inductance..."/>
+            android:hint="Enter value..."/>
 
         <Button
             android:layout_width="wrap_content"

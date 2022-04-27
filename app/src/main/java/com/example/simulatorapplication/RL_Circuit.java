@@ -53,10 +53,9 @@ public class RL_Circuit extends AppCompatActivity {
                 }
                 else
                 {
-                    //add result file
-//                    Intent i = new Intent(getApplicationContext(), resultBuck.class);
-//                    i.putExtras(bundle);
-//                    startActivity(i);
+                    Intent i = new Intent(getApplicationContext(), resultRL.class);
+                    i.putExtras(bundle);
+                    startActivity(i);
                 }
             }
         });
