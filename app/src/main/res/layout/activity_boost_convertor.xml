@@ -53,8 +53,8 @@ android:fillViewport="true">
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Voltage"
             android:layout_marginHorizontal="5dp"
+            android:text="Voltage Vin (V)"
             android:textColor="@color/black"
             android:textSize="21dp"/>
 
@@ -64,28 +64,30 @@ android:fillViewport="true">
             android:layout_height="wrap_content"
             android:inputType="numberDecimal"
             android:layout_marginHorizontal="5dp"
-            android:hint="Enter Voltage..."/>
+            android:hint="Enter value..."/>
+
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Resistance(ohm)"
-            android:layout_marginHorizontal="5dp"
+            android:text="Resistance (Ω)"
             android:textColor="@color/black"
+            android:layout_marginHorizontal="5dp"
             android:textSize="21dp"/>
 
         <EditText
             android:id="@+id/resistance"
             android:layout_width="match_parent"
             android:inputType="numberDecimal"
-            android:layout_marginHorizontal="5dp"
             android:layout_height="wrap_content"
-            android:hint="Enter Resistnce..."/>
+            android:layout_marginHorizontal="5dp"
+            android:hint="Enter value..."/>
+
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Capacitance(in micro F)"
+            android:text="Capacitance(µF)"
             android:textColor="@color/black"
             android:layout_marginHorizontal="5dp"
             android:textSize="21dp"/>
@@ -96,61 +98,62 @@ android:fillViewport="true">
             android:layout_height="wrap_content"
             android:inputType="numberDecimal"
             android:layout_marginHorizontal="5dp"
-            android:hint="Enter Capacitance..."/>
+            android:hint="Enter value..."/>
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Inductance(in milli H)"
-            android:layout_marginHorizontal="5dp"
+            android:text="Inductance (mH)"
             android:textColor="@color/black"
+            android:layout_marginHorizontal="5dp"
             android:textSize="21dp"/>
 
         <EditText
             android:id="@+id/inductance"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginHorizontal="5dp"
             android:inputType="numberDecimal"
-            android:hint="Enter Inductance..."/>
+            android:layout_marginHorizontal="5dp"
+            android:hint="Enter value..."/>
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="T_on(in milli sec)"
-            android:layout_marginHorizontal="5dp"
+            android:text="T_on (ms)"
             android:textColor="@color/black"
+            android:layout_marginHorizontal="5dp"
             android:textSize="21dp"/>
 
         <EditText
             android:id="@+id/t_on"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginHorizontal="5dp"
             android:inputType="numberDecimal"
-            android:hint="Enter on time period..."/>
+            android:layout_marginHorizontal="5dp"
+            android:hint="Enter value..."/>
+
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="T_off(in milli sec)"
-            android:layout_marginHorizontal="5dp"
+            android:text="T_off (ms)"
             android:textColor="@color/black"
+            android:layout_marginHorizontal="5dp"
             android:textSize="21dp"/>
 
         <EditText
             android:id="@+id/t_off"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginHorizontal="5dp"
             android:inputType="numberDecimal"
-            android:hint="Enter off time period..."/>
+            android:layout_marginHorizontal="5dp"
+            android:hint="Enter value..."/>
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Initial Capacitance Voltage"
             android:layout_marginHorizontal="5dp"
+            android:text="Initial Capacitor Voltage (V)"
             android:textColor="@color/black"
             android:textSize="21dp"/>
 
@@ -160,29 +163,30 @@ android:fillViewport="true">
             android:layout_height="wrap_content"
             android:layout_marginHorizontal="5dp"
             android:inputType="numberDecimal"
-            android:hint="Enter initial Capacitor Voltage"/>
+            android:hint="Enter value..."/>
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Initial Inductor Current"
-            android:layout_marginHorizontal="5dp"
+            android:text="Initial Inductor Current (A)"
             android:textColor="@color/black"
+            android:layout_marginHorizontal="5dp"
             android:textSize="21dp"/>
 
         <EditText
             android:id="@+id/il_initial"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginHorizontal="5dp"
             android:inputType="numberDecimal"
-            android:hint="Enter initial Inductance Current"/>
+            android:layout_marginHorizontal="5dp"
+            android:hint="Enter value..." />
+
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Total time for simulation"
             android:layout_marginHorizontal="5dp"
+            android:text="Total time for simulation (s)"
             android:textColor="@color/black"
             android:textSize="21dp"/>
 
@@ -190,9 +194,9 @@ android:fillViewport="true">
             android:id="@+id/t_tot"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginHorizontal="5dp"
             android:inputType="numberDecimal"
-            android:hint="Enter Total Time"/>
+            android:layout_marginHorizontal="5dp"
+            android:hint="Enter value..." />
 
         <Button
             android:layout_width="wrap_content"

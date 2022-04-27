@@ -18,7 +18,7 @@ android:orientation="vertical">
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:layout_margin="10dp"
-    android:text="Capacitance Voltage vs Time" />
+    android:text="Output/Capacitor Voltage vs Time" />
 
 <Button
     android:id="@+id/btnb"
@@ -32,7 +32,7 @@ android:orientation="vertical">
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:layout_margin="10dp"
-    android:text="Output Current vs Time" />
+    android:text="Load Current vs Time" />
 
 <Button
     android:id="@+id/btnd"
