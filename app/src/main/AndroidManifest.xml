@@ -10,6 +10,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.SimulatorApplication">
         <activity
+            android:name=".BoostAll"
+            android:exported="false" />
+        <activity
+            android:name=".BuckAll"
+            android:exported="false" />
+        <activity
             android:name=".BoostVl_T"
             android:exported="false" />
         <activity

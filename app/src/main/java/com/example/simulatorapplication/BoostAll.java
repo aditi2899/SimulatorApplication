@@ -2,7 +2,6 @@
 package com.example.simulatorapplication;
 
         import androidx.appcompat.app.AppCompatActivity;
-
         import android.content.Context;
         import android.content.Intent;
         import android.graphics.Color;
@@ -22,14 +21,14 @@ package com.example.simulatorapplication;
         import java.util.Map;
 
 
-public class BoostVl_T<VerticalTextView> extends AppCompatActivity {
+public class BoostAll<VerticalTextView> extends AppCompatActivity {
 
     LineChart mpLineChart;
     float v,r,c,ind,on,off,vc_i,il_i,t_tot;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_boost_vl_t);
+        setContentView(R.layout.activity_boost_all);
         mpLineChart = (LineChart) findViewById(R.id.lineChart);
 
         Intent intent=getIntent();
@@ -52,9 +51,17 @@ public class BoostVl_T<VerticalTextView> extends AppCompatActivity {
         vc_i= Float.parseFloat(Vc_initial);
         il_i= Float.parseFloat(Il_initial);
         t_tot= Float.parseFloat(T_tot);
-        LineDataSet lineDataSet1 = new LineDataSet(dataValues1(), "Vi vs T");
+        LineDataSet lineDataSet1 = new LineDataSet(dataValues1(), "Vc vs T");
+        LineDataSet lineDataSet2 = new LineDataSet(dataValues2(), "Vi vs T");
+        LineDataSet lineDataSet3 = new LineDataSet(dataValues3(), "Io vs T");
+        LineDataSet lineDataSet4 = new LineDataSet(dataValues4(), "Ii vs T");
+
         ArrayList<ILineDataSet> dataSets = new ArrayList<>();
         dataSets.add(lineDataSet1);
+        dataSets.add(lineDataSet2);
+        dataSets.add(lineDataSet3);
+        dataSets.add(lineDataSet4);
+
         XAxis xAxis = mpLineChart.getXAxis();
         xAxis.setPosition(XAxis.XAxisPosition.BOTTOM);
 //        xAxis.enableGridDashedLine(1,1,0);
@@ -68,6 +75,35 @@ public class BoostVl_T<VerticalTextView> extends AppCompatActivity {
     }
 
     private ArrayList<Entry> dataValues1() {
+        ArrayList<Entry> dataVals = new ArrayList<Entry>();
+        dataVals.add(new Entry(0, vc_i));
+        float Vl,Il=0,Io,Vc;
+        float dt= (float) .000001;
+        float last_Vc=vc_i,last_Il=il_i;
+        for (double t = .000001; t <= t_tot; t += .000001) {
+            float x = (float) t;
+            float modu = x%(on+off),Ic;
+
+            if(modu<=on){
+                Vl=v;
+                Ic=-last_Vc/r;
+            }
+            else{
+                Vl=v-last_Vc;
+                Ic=last_Il-(last_Vc/r);
+            }
+
+            Il=last_Il+((Vl*dt)/ind);
+            Vc=last_Vc+((Ic/c)*dt);
+            Io=Vc/r;
+            dataVals.add(new Entry(x, Vc));
+            last_Vc=Vc;
+            last_Il=Il;
+
+        }
+        return dataVals;
+    }
+    private ArrayList<Entry> dataValues2() {
         ArrayList<Entry> dataVals = new ArrayList<Entry>();
 
         dataVals.add(new Entry(0, 0));
@@ -92,6 +128,67 @@ public class BoostVl_T<VerticalTextView> extends AppCompatActivity {
             Vc=last_Vc+((Ic/c)*dt);
             Io=Vc/r;
             dataVals.add(new Entry(x, Vl));
+            last_Vc=Vc;
+            last_Il=Il;
+
+        }
+        return dataVals;
+    }
+    private ArrayList<Entry> dataValues3() {
+        Intent intent=getIntent();
+        ArrayList<Entry> dataVals = new ArrayList<Entry>();
+
+        dataVals.add(new Entry(0, 0));
+        float Vl,Il=0,Io,Vc;
+        float dt= (float) .000001;
+        float last_Vc=vc_i,last_Il=il_i;
+        for (double t = .000001; t <= t_tot; t += .000001) {
+            float x = (float) t;
+            float modu = x%(on+off),Ic;
+
+            if(modu<=on){
+                Vl=v;
+                Ic=-last_Vc/r;
+            }
+            else{
+                Vl=v-last_Vc;
+                Ic=last_Il-(last_Vc/r);
+            }
+
+            Il=last_Il+((Vl*dt)/ind);
+            Vc=last_Vc+((Ic/c)*dt);
+            Io=Vc/r;
+            dataVals.add(new Entry(x, Io));
+            last_Vc=Vc;
+            last_Il=Il;
+
+        }
+        return dataVals;
+    }
+    private ArrayList<Entry> dataValues4() {
+        ArrayList<Entry> dataVals = new ArrayList<Entry>();
+
+        dataVals.add(new Entry(0, il_i));
+        float Vl,Il=0,Io,Vc;
+        float dt= (float) .000001;
+        float last_Vc=vc_i,last_Il=il_i;
+        for (double t = .000001; t <= t_tot; t += .000001) {
+            float x = (float) t;
+            float modu = x%(on+off),Ic;
+
+            if(modu<=on){
+                Vl=v;
+                Ic=-last_Vc/r;
+            }
+            else{
+                Vl=v-last_Vc;
+                Ic=last_Il-(last_Vc/r);
+            }
+
+            Il=last_Il+((Vl*dt)/ind);
+            Vc=last_Vc+((Ic/c)*dt);
+            Io=Vc/r;
+            dataVals.add(new Entry(x, Il));
             last_Vc=Vc;
             last_Il=Il;
 

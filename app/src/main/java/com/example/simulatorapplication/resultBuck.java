@@ -82,7 +82,7 @@ public class resultBuck extends AppCompatActivity {
         btne.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent i = new Intent(getApplicationContext(), lineChart1.class);
+                Intent i = new Intent(getApplicationContext(), BuckAll.class);
                 i.putExtras(bundle);
                 startActivity(i);
             }

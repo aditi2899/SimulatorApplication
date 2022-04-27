@@ -4,11 +4,13 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/Users/dell/AndroidStudioProjects/SimulatorApplication/app/src/main/res/drawable/image1.xml" value="0.2265" />
+        <entry key="..\:/Users/dell/AndroidStudioProjects/SimulatorApplication/app/src/main/res/layout/activity_boost_all.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/dell/AndroidStudioProjects/SimulatorApplication/app/src/main/res/layout/activity_boost_convertor.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/dell/AndroidStudioProjects/SimulatorApplication/app/src/main/res/layout/activity_boost_il_t.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/dell/AndroidStudioProjects/SimulatorApplication/app/src/main/res/layout/activity_boost_io_t.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/dell/AndroidStudioProjects/SimulatorApplication/app/src/main/res/layout/activity_boost_vc_t.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/dell/AndroidStudioProjects/SimulatorApplication/app/src/main/res/layout/activity_boost_vl_t.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/dell/AndroidStudioProjects/SimulatorApplication/app/src/main/res/layout/activity_buck_all.xml" value="0.11302083333333333" />
         <entry key="..\:/Users/dell/AndroidStudioProjects/SimulatorApplication/app/src/main/res/layout/activity_buck_il_t.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/dell/AndroidStudioProjects/SimulatorApplication/app/src/main/res/layout/activity_buck_io_t.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/dell/AndroidStudioProjects/SimulatorApplication/app/src/main/res/layout/activity_buck_vc_t.xml" value="0.25416666666666665" />
