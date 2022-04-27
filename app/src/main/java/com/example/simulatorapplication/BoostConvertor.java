@@ -38,7 +38,8 @@ public class BoostConvertor extends AppCompatActivity {
         btnknow.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
+                Intent i = new Intent(getApplicationContext(), knowBoost.class);
+                startActivity(i);
             }
         });
         Button btn = findViewById(R.id.submit);

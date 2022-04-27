@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".knowBoost">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="5dp"
+            android:paddingTop="35dp"
+            android:text="Boost Convertor is a step-up converter, i.e, the output
+voltage is always greater than the input voltage. Its main application is in regulated dc power
+supplies and the regenerative braking of dc motors. When the switch is on, the diode is
+reversed biased, thus isolating the output stage. The input supplies energy to the inductor_
+When the switch is off, the output stage receives energy from the inductor as well as froID
+the input. "
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="21dp"/>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -26,7 +26,8 @@ public class RL_Circuit extends AppCompatActivity {
         btnknow.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
+                Intent i = new Intent(getApplicationContext(), knowRL.class);
+                startActivity(i);
             }
         });
         Button btn = findViewById(R.id.submit);

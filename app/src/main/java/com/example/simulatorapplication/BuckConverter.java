@@ -37,7 +37,8 @@ public class BuckConverter extends AppCompatActivity {
         btnknow.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                
+                Intent i = new Intent(getApplicationContext(), knowBuck.class);
+                startActivity(i);
             }
         });
 

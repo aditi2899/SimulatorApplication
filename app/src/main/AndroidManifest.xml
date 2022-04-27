@@ -10,6 +10,18 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.SimulatorApplication">
         <activity
+            android:name=".knowRC"
+            android:exported="false" />
+        <activity
+            android:name=".knowRL"
+            android:exported="false" />
+        <activity
+            android:name=".knowBoost"
+            android:exported="false" />
+        <activity
+            android:name=".knowBuck"
+            android:exported="false" />
+        <activity
             android:name=".RlAll"
             android:exported="false" />
         <activity

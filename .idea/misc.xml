@@ -21,6 +21,10 @@
         <entry key="..\:/Users/dell/AndroidStudioProjects/SimulatorApplication/app/src/main/res/layout/activity_result_buck.xml" value="0.1" />
         <entry key="..\:/Users/dell/AndroidStudioProjects/SimulatorApplication/app/src/main/res/layout/activity_rl_circuit.xml" value="0.25416666666666665" />
         <entry key="app/src/main/res/layout/activity_buck_all.xml" value="0.16458333333333333" />
+        <entry key="app/src/main/res/layout/activity_know_boost.xml" value="0.2515625" />
+        <entry key="app/src/main/res/layout/activity_know_buck.xml" value="0.2515625" />
+        <entry key="app/src/main/res/layout/activity_know_rc.xml" value="0.2375" />
+        <entry key="app/src/main/res/layout/activity_know_rl.xml" value="0.2515625" />
         <entry key="app/src/main/res/layout/activity_result_boost.xml" value="0.16458333333333333" />
       </map>
     </option>
