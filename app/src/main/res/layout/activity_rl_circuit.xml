@@ -33,6 +33,16 @@ android:fillViewport="false">
             android:textStyle="bold"
             android:text="RLC Circuit"/>
 
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/knowMoreRL"
+            android:text="What is RL Circuit ?"
+            android:paddingVertical="7dp"
+            android:layout_gravity="center"
+            android:backgroundTint="@color/teal_700"
+            />
+
         <ImageView
             android:layout_width="fill_parent"
             android:layout_height="300dp"
@@ -44,7 +54,7 @@ android:fillViewport="false">
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Voltage"
-            android:layout_marginLeft="5dp"
+            android:layout_marginHorizontal="5dp"
             android:textColor="@color/black"
             android:textSize="21dp"/>
 
@@ -53,14 +63,14 @@ android:fillViewport="false">
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:inputType="numberDecimal"
-            android:layout_marginLeft="5dp"
+            android:layout_marginHorizontal="5dp"
             android:hint="Enter Voltage..."/>
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Resistance"
-            android:layout_marginLeft="5dp"
+            android:layout_marginHorizontal="5dp"
             android:textColor="@color/black"
             android:textSize="21dp"/>
 
@@ -68,7 +78,7 @@ android:fillViewport="false">
             android:id="@+id/resistance"
             android:layout_width="match_parent"
             android:inputType="numberDecimal"
-            android:layout_marginLeft="5dp"
+            android:layout_marginHorizontal="5dp"
             android:layout_height="wrap_content"
             android:hint="Enter Resistnce..."/>
 
@@ -76,13 +86,13 @@ android:fillViewport="false">
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Inductance"
-            android:layout_marginLeft="5dp"
+            android:layout_marginHorizontal="5dp"
             android:textColor="@color/black"
             android:textSize="21dp"/>
 
         <EditText
             android:id="@+id/inductance"
-            android:layout_marginLeft="5dp"
+            android:layout_marginHorizontal="5dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:inputType="numberDecimal"

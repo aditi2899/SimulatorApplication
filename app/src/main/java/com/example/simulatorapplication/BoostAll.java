@@ -69,9 +69,28 @@ public class BoostAll<VerticalTextView> extends AppCompatActivity {
 //        xAxis.setDrawLabels(true);
 //        xAxis.setDrawGridLines(false);
         LineData data = new LineData(dataSets);
+        lineDataSet1.setDrawCircles(false);
+        lineDataSet2.setDrawCircles(false);
+        lineDataSet3.setDrawCircles(false);
+        lineDataSet4.setDrawCircles(false);
+        lineDataSet1.setLineWidth(3);
+        lineDataSet2.setLineWidth(3);
+        lineDataSet3.setLineWidth(3);
+        lineDataSet4.setLineWidth(3);
+//        ((LineDataSet) dataSets.get(0)).enableDashedLine(10, 10, 0);
+//        ((LineDataSet) dataSets.get(0)).setColors(ColorTemplate.PASTEL_COLORS);
+//        ((LineDataSet) dataSets.get(1)).setColors(ColorTemplate.PASTEL_COLORS);
+        lineDataSet1.setColor(Color.GREEN);
+        lineDataSet1.setCircleColor(Color.GREEN);
+        lineDataSet2.setColor(Color.BLUE);
+        lineDataSet2.setCircleColor(Color.BLUE);
+        lineDataSet3.setColor(Color.BLACK);
+        lineDataSet3.setCircleColor(Color.BLACK);
+        lineDataSet4.setColor(Color.RED);
+        lineDataSet4.setCircleColor(Color.RED);
         mpLineChart.setData(data);
         mpLineChart.invalidate();
-
+        mpLineChart.getDescription().setEnabled(false);
     }
 
     private ArrayList<Entry> dataValues1() {

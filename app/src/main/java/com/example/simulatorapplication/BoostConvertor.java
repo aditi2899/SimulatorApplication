@@ -34,7 +34,13 @@ public class BoostConvertor extends AppCompatActivity {
         il_i = (EditText) findViewById(R.id.il_initial);
 
         tot = (EditText) findViewById(R.id.t_tot);
+        Button btnknow= findViewById(R.id.knowMoreBoost);
+        btnknow.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
 
+            }
+        });
         Button btn = findViewById(R.id.submit);
         btn.setOnClickListener(new View.OnClickListener() {
             @Override

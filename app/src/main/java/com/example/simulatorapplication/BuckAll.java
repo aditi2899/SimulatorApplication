@@ -17,6 +17,7 @@ package com.example.simulatorapplication;
         import com.github.mikephil.charting.data.LineData;
         import com.github.mikephil.charting.data.LineDataSet;
         import com.github.mikephil.charting.interfaces.datasets.ILineDataSet;
+        import com.github.mikephil.charting.utils.ColorTemplate;
 
         import java.util.ArrayList;
         import java.util.Map;
@@ -61,6 +62,31 @@ public class BuckAll<VerticalTextView> extends AppCompatActivity {
         dataSets.add(lineDataSet2);
         dataSets.add(lineDataSet3);
         dataSets.add(lineDataSet4);
+//        LineDataSet lineDataSet1 = new LineDataSet(yVals1, "ex1");
+//        lineDataSet1.setColors(ColorTemplate.PASTEL_COLORS);
+//        lineDataSet2.setColors(ColorTemplate.COLORFUL_COLORS);
+//        getResources().getColor(1234);
+//        ((LineDataSet) dataSets.get(1)).setColors(ColorTemplate.VORDIPLOM_COLORS);
+//        ((LineDataSet) dataSets.get(1)).setCircleColors(ColorTemplate.VORDIPLOM_COLORS);
+        lineDataSet1.setDrawCircles(false);
+        lineDataSet2.setDrawCircles(false);
+        lineDataSet3.setDrawCircles(false);
+        lineDataSet4.setDrawCircles(false);
+        lineDataSet1.setLineWidth(3);
+        lineDataSet2.setLineWidth(3);
+        lineDataSet3.setLineWidth(3);
+        lineDataSet4.setLineWidth(3);
+//        ((LineDataSet) dataSets.get(0)).enableDashedLine(10, 10, 0);
+//        ((LineDataSet) dataSets.get(0)).setColors(ColorTemplate.PASTEL_COLORS);
+//        ((LineDataSet) dataSets.get(1)).setColors(ColorTemplate.PASTEL_COLORS);
+        lineDataSet1.setColor(Color.GREEN);
+        lineDataSet1.setCircleColor(Color.GREEN);
+        lineDataSet2.setColor(Color.BLUE);
+        lineDataSet2.setCircleColor(Color.BLUE);
+        lineDataSet3.setColor(Color.BLACK);
+        lineDataSet3.setCircleColor(Color.BLACK);
+        lineDataSet4.setColor(Color.RED);
+        lineDataSet4.setCircleColor(Color.RED);
         XAxis xAxis = mpLineChart.getXAxis();
         xAxis.setPosition(XAxis.XAxisPosition.BOTTOM);
 //        xAxis.enableGridDashedLine(1,1,0);
@@ -70,7 +96,7 @@ public class BuckAll<VerticalTextView> extends AppCompatActivity {
         LineData data = new LineData(dataSets);
         mpLineChart.setData(data);
         mpLineChart.invalidate();
-
+        mpLineChart.getDescription().setEnabled(false);
     }
 
     private ArrayList<Entry> dataValues1() {

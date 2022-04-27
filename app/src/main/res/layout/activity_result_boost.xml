@@ -1,11 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-xmlns:tools="http://schemas.android.com/tools"
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:fillViewport="true"
+    tools:context=".resultBoost">
+<LinearLayout
 android:layout_width="match_parent"
 android:layout_height="match_parent"
 android:gravity="center"
-android:orientation="vertical"
-tools:context=".resultBoost">
+android:orientation="vertical">
 
 <Button
     android:id="@+id/btna"
@@ -43,3 +49,4 @@ tools:context=".resultBoost">
     android:text="Line Chart 2 Demo" />
 
 </LinearLayout>
+    </ScrollView>

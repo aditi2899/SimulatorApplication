@@ -33,6 +33,16 @@ android:fillViewport="true">
             android:textStyle="bold"
             android:text="Boost Converter"/>
 
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/knowMoreBoost"
+            android:text="What is Boost Converter ?"
+            android:paddingVertical="7dp"
+            android:layout_gravity="center"
+            android:backgroundTint="@color/teal_700"
+            />
+
         <ImageView
             android:layout_width="fill_parent"
             android:layout_height="300dp"
@@ -44,7 +54,7 @@ android:fillViewport="true">
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Voltage"
-            android:layout_marginLeft="5dp"
+            android:layout_marginHorizontal="5dp"
             android:textColor="@color/black"
             android:textSize="21dp"/>
 
@@ -53,14 +63,14 @@ android:fillViewport="true">
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:inputType="numberDecimal"
-            android:layout_marginLeft="5dp"
+            android:layout_marginHorizontal="5dp"
             android:hint="Enter Voltage..."/>
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Resistance(ohm)"
-            android:layout_marginLeft="5dp"
+            android:layout_marginHorizontal="5dp"
             android:textColor="@color/black"
             android:textSize="21dp"/>
 
@@ -68,7 +78,7 @@ android:fillViewport="true">
             android:id="@+id/resistance"
             android:layout_width="match_parent"
             android:inputType="numberDecimal"
-            android:layout_marginLeft="5dp"
+            android:layout_marginHorizontal="5dp"
             android:layout_height="wrap_content"
             android:hint="Enter Resistnce..."/>
 
@@ -77,7 +87,7 @@ android:fillViewport="true">
             android:layout_height="wrap_content"
             android:text="Capacitance(in micro F)"
             android:textColor="@color/black"
-            android:layout_marginLeft="5dp"
+            android:layout_marginHorizontal="5dp"
             android:textSize="21dp"/>
 
         <EditText
@@ -85,14 +95,14 @@ android:fillViewport="true">
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:inputType="numberDecimal"
-            android:layout_marginLeft="5dp"
+            android:layout_marginHorizontal="5dp"
             android:hint="Enter Capacitance..."/>
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Inductance(in milli H)"
-            android:layout_marginLeft="5dp"
+            android:layout_marginHorizontal="5dp"
             android:textColor="@color/black"
             android:textSize="21dp"/>
 
@@ -100,7 +110,7 @@ android:fillViewport="true">
             android:id="@+id/inductance"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="5dp"
+            android:layout_marginHorizontal="5dp"
             android:inputType="numberDecimal"
             android:hint="Enter Inductance..."/>
 
@@ -108,7 +118,7 @@ android:fillViewport="true">
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="T_on(in milli sec)"
-            android:layout_marginLeft="5dp"
+            android:layout_marginHorizontal="5dp"
             android:textColor="@color/black"
             android:textSize="21dp"/>
 
@@ -116,7 +126,7 @@ android:fillViewport="true">
             android:id="@+id/t_on"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="5dp"
+            android:layout_marginHorizontal="5dp"
             android:inputType="numberDecimal"
             android:hint="Enter on time period..."/>
 
@@ -124,7 +134,7 @@ android:fillViewport="true">
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="T_off(in milli sec)"
-            android:layout_marginLeft="5dp"
+            android:layout_marginHorizontal="5dp"
             android:textColor="@color/black"
             android:textSize="21dp"/>
 
@@ -132,7 +142,7 @@ android:fillViewport="true">
             android:id="@+id/t_off"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="5dp"
+            android:layout_marginHorizontal="5dp"
             android:inputType="numberDecimal"
             android:hint="Enter off time period..."/>
 
@@ -140,7 +150,7 @@ android:fillViewport="true">
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Initial Capacitance Voltage"
-            android:layout_marginLeft="5dp"
+            android:layout_marginHorizontal="5dp"
             android:textColor="@color/black"
             android:textSize="21dp"/>
 
@@ -148,7 +158,7 @@ android:fillViewport="true">
             android:id="@+id/vc_initial"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="5dp"
+            android:layout_marginHorizontal="5dp"
             android:inputType="numberDecimal"
             android:hint="Enter initial Capacitor Voltage"/>
 
@@ -156,7 +166,7 @@ android:fillViewport="true">
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Initial Inductor Current"
-            android:layout_marginLeft="5dp"
+            android:layout_marginHorizontal="5dp"
             android:textColor="@color/black"
             android:textSize="21dp"/>
 
@@ -164,7 +174,7 @@ android:fillViewport="true">
             android:id="@+id/il_initial"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="5dp"
+            android:layout_marginHorizontal="5dp"
             android:inputType="numberDecimal"
             android:hint="Enter initial Inductance Current"/>
 
@@ -172,7 +182,7 @@ android:fillViewport="true">
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Total time for simulation"
-            android:layout_marginLeft="5dp"
+            android:layout_marginHorizontal="5dp"
             android:textColor="@color/black"
             android:textSize="21dp"/>
 
@@ -180,7 +190,7 @@ android:fillViewport="true">
             android:id="@+id/t_tot"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="5dp"
+            android:layout_marginHorizontal="5dp"
             android:inputType="numberDecimal"
             android:hint="Enter Total Time"/>
 

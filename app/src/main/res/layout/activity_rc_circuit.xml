@@ -33,6 +33,16 @@
                 android:textStyle="bold"
                 android:text="RC Circuit"/>
 
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/knowMoreRC"
+                android:text="What is RC Circuit ?"
+                android:paddingVertical="7dp"
+                android:layout_gravity="center"
+                android:backgroundTint="@color/teal_700"
+                />
+
             <ImageView
                 android:layout_width="fill_parent"
                 android:layout_height="300dp"
@@ -44,7 +54,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Voltage"
-                android:layout_marginLeft="5dp"
+                android:layout_marginHorizontal="5dp"
                 android:textColor="@color/black"
                 android:textSize="21dp"/>
 
@@ -52,7 +62,7 @@
                 android:id="@+id/voltage"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="5dp"
+                android:layout_marginHorizontal="5dp"
                 android:inputType="numberDecimal"
                 android:hint="Enter Voltage..."/>
 
@@ -60,7 +70,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Resistance"
-                android:layout_marginLeft="5dp"
+                android:layout_marginHorizontal="5dp"
                 android:textColor="@color/black"
                 android:textSize="21dp"/>
 
@@ -69,14 +79,14 @@
                 android:layout_width="match_parent"
                 android:inputType="numberDecimal"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="5dp"
+                android:layout_marginHorizontal="5dp"
                 android:hint="Enter Resistnce..."/>
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Capacitance"
-                android:layout_marginLeft="5dp"
+                android:layout_marginHorizontal="5dp"
                 android:textColor="@color/black"
                 android:textSize="21dp"/>
 
@@ -84,7 +94,7 @@
                 android:id="@+id/capacitance"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="5dp"
+                android:layout_marginHorizontal="5dp"
                 android:inputType="numberDecimal"
                 android:hint="Enter Capacitance..."/>
 

@@ -51,12 +51,14 @@ public class BuckIo_T extends AppCompatActivity {
         LineDataSet lineDataSet1 = new LineDataSet(dataValues1(), "Io vs T");
         ArrayList<ILineDataSet> dataSets = new ArrayList<>();
         dataSets.add(lineDataSet1);
+        lineDataSet1.setDrawCircles(false);
+        lineDataSet1.setLineWidth(4);
         XAxis xAxis = mpLineChart.getXAxis();
         xAxis.setPosition(XAxis.XAxisPosition.BOTTOM);
         LineData data = new LineData(dataSets);
         mpLineChart.setData(data);
         mpLineChart.invalidate();
-
+        mpLineChart.getDescription().setEnabled(false);
     }
 
 

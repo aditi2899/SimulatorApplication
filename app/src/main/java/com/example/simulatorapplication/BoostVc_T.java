@@ -54,6 +54,8 @@ public class BoostVc_T<VerticalTextView> extends AppCompatActivity {
         LineDataSet lineDataSet1 = new LineDataSet(dataValues1(), "Vc vs T");
         ArrayList<ILineDataSet> dataSets = new ArrayList<>();
         dataSets.add(lineDataSet1);
+        lineDataSet1.setDrawCircles(false);
+        lineDataSet1.setLineWidth(4);
         XAxis xAxis = mpLineChart.getXAxis();
         xAxis.setPosition(XAxis.XAxisPosition.BOTTOM);
 //        xAxis.enableGridDashedLine(1,1,0);
@@ -63,7 +65,7 @@ public class BoostVc_T<VerticalTextView> extends AppCompatActivity {
         LineData data = new LineData(dataSets);
         mpLineChart.setData(data);
         mpLineChart.invalidate();
-
+        mpLineChart.getDescription().setEnabled(false);
     }
 
     private ArrayList<Entry> dataValues1() {

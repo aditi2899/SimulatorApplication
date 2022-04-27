@@ -22,7 +22,13 @@ public class RL_Circuit extends AppCompatActivity {
         Res = (EditText) findViewById(R.id.resistance);
 
         Ind = (EditText) findViewById(R.id.inductance);
+        Button btnknow= findViewById(R.id.knowMoreRL);
+        btnknow.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
 
+            }
+        });
         Button btn = findViewById(R.id.submit);
         btn.setOnClickListener(new View.OnClickListener() {
             @Override

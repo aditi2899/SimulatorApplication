@@ -22,7 +22,13 @@ public class RC_Circuit extends AppCompatActivity {
         Res = (EditText) findViewById(R.id.resistance);
 
         Cap = (EditText) findViewById(R.id.capacitance);
+        Button btnknow= findViewById(R.id.knowMoreRC);
+        btnknow.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
 
+            }
+        });
         Button btn = findViewById(R.id.submit);
         btn.setOnClickListener(new View.OnClickListener() {
             @Override
