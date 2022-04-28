@@ -177,6 +177,34 @@
                     />
             </LinearLayout>
 
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="fill_parent"
+                    android:layout_height="300dp"
+                    android:layout_gravity="center"
+                    android:paddingHorizontal="27dp"
+                    android:src="@drawable/buckboost" />
+
+                <Button
+                    android:id="@+id/button5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:padding="17dp"
+                    android:layout_marginBottom="13dp"
+                    android:text="Buck-Boost Converter" />
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="2dp"
+                    android:background="#E91E63"
+                    />
+            </LinearLayout>
+
 
         </LinearLayout>
 

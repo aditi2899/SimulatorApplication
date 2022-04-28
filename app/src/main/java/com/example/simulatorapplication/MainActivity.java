@@ -49,8 +49,18 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
 
-                Intent i = new Intent(getApplicationContext(), BoostConvertor.class);
-                startActivity(i);
+                Intent k = new Intent(getApplicationContext(), BoostConvertor.class);
+                startActivity(k);
+            }
+        });
+
+        Button btn5 = findViewById(R.id.button5);
+        btn5.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+                Intent k = new Intent(getApplicationContext(), BuckBoostConverter.class);
+                startActivity(k);
             }
         });
 

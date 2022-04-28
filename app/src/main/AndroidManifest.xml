@@ -10,6 +10,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.SimulatorApplication">
         <activity
+            android:name=".knowBuckBoost"
+            android:exported="false" />
+        <activity
+            android:name=".BuckBoostConverter"
+            android:exported="false" />
+        <activity
             android:name=".knowRC"
             android:exported="false" />
         <activity
