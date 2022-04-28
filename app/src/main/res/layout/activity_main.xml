@@ -74,7 +74,7 @@
                     android:layout_height="300dp"
                     android:paddingHorizontal="27dp"
                     android:layout_gravity="center"
-                    android:src="@drawable/rc_circuit" />
+                    android:src="@drawable/rc" />
 
                 <Button
                     android:id="@+id/button1"
@@ -103,7 +103,7 @@
                     android:layout_height="300dp"
                     android:layout_gravity="center"
                     android:paddingHorizontal="27dp"
-                    android:src="@drawable/rl_circuit_18_2_14_2" />
+                    android:src="@drawable/rl" />
 
                 <Button
                     android:id="@+id/button2"

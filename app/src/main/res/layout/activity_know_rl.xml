@@ -31,7 +31,7 @@
             android:layout_height="300dp"
             android:layout_gravity="center"
             android:paddingRight="27dp"
-            android:src="@drawable/rl_circuit_18_2_14_2" />
+            android:src="@drawable/rl" />
 
         <TextView
             android:layout_width="match_parent"

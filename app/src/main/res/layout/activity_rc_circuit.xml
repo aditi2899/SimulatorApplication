@@ -48,7 +48,7 @@
                 android:layout_height="300dp"
                 android:layout_gravity="center"
                 android:paddingRight="27dp"
-                android:src="@drawable/rc_circuit" />
+                android:src="@drawable/rc" />
 
             <TextView
                 android:layout_width="match_parent"
