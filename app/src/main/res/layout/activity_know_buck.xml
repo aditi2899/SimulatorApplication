@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:fillViewport="true"
     tools:context=".knowBuck">
 
     <LinearLayout
@@ -15,7 +17,6 @@
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:layout_marginBottom="5dp"
             android:padding="13dp"
             android:autoSizeTextType="uniform"
             android:background="@color/black"
@@ -39,13 +40,15 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginHorizontal="5dp"
-            android:paddingTop="35dp"
             android:text="Buck Convertor is a step-down converter. It produces a lower average output voltage than
 the dc input voltage. Its main application is in regulated dc power supplies and dc
-motor speed control. "
+motor speed control.
+The operation of the circuit is determined by the switch's conduction state:
+(a) On-state: The current flowing through the inductor rises, and the diode is reversed biased. (b) Off-state: Since the current via the inductor cannot abruptly change, the diode must carry the current, causing it to commutate and conduct.
+"
             android:textAlignment="center"
             android:textColor="@color/black"
             android:textSize="21dp"/>
     </LinearLayout>
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
