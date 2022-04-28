@@ -156,8 +156,9 @@
 
                 <ImageView
                     android:layout_width="fill_parent"
-                    android:layout_height="300dp"
-                    android:paddingRight="27dp"
+                    android:layout_height="200dp"
+                    android:paddingHorizontal="27dp"
+                    android:layout_marginVertical="33dp"
                     android:layout_gravity="center"
                     android:src="@drawable/boostx" />
 
