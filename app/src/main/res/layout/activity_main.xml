@@ -70,9 +70,9 @@
                    />
 
                 <ImageView
-                    android:layout_width="fill_parent"
-                    android:layout_height="300dp"
-                    android:paddingHorizontal="27dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="240dp"
+                    android:paddingVertical="27dp"
                     android:layout_gravity="center"
                     android:src="@drawable/rc" />
 
