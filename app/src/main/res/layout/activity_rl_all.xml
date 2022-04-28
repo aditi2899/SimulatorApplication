@@ -14,12 +14,5 @@ tools:context=".RlAll">
     android:layout_height="match_parent">
 </com.github.mikephil.charting.charts.LineChart>
 
-<TextView
-    android:id="@+id/display"
-    android:text="All"
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:textColor="@color/black"
-    android:textSize="21dp"/>
 
 </RelativeLayout>
