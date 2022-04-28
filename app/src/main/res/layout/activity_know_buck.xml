@@ -33,7 +33,7 @@
             android:layout_height="300dp"
             android:layout_gravity="center"
             android:paddingRight="27dp"
-            android:src="@drawable/buck__1_" />
+            android:src="@drawable/buck" />
 
         <TextView
             android:layout_width="match_parent"

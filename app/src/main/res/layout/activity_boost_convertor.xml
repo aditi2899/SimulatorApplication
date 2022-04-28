@@ -48,7 +48,7 @@ android:fillViewport="true">
             android:layout_height="300dp"
             android:layout_gravity="center"
             android:paddingRight="27dp"
-            android:src="@drawable/boost__1_" />
+            android:src="@drawable/boostx" />
 
         <TextView
             android:layout_width="match_parent"

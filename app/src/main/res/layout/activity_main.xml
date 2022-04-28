@@ -131,7 +131,7 @@
                     android:layout_height="300dp"
                     android:layout_gravity="center"
                     android:paddingHorizontal="27dp"
-                    android:src="@drawable/buck__1_" />
+                    android:src="@drawable/buck" />
 
                 <Button
                     android:id="@+id/button3"
@@ -159,7 +159,7 @@
                     android:layout_height="300dp"
                     android:paddingRight="27dp"
                     android:layout_gravity="center"
-                    android:src="@drawable/boost__1_" />
+                    android:src="@drawable/boostx" />
 
                 <Button
                     android:id="@+id/button4"
