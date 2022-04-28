@@ -10,6 +10,27 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical">
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:autoSizeTextType="uniform"
+            android:background="@color/black"
+            android:fontFamily="serif"
+            android:padding="13dp"
+            android:text="RC Circuit"
+            android:textAlignment="center"
+            android:textAllCaps="true"
+            android:textColor="@color/white"
+            android:textSize="35dp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="300dp"
+            android:layout_gravity="center"
+            android:paddingRight="27dp"
+            android:src="@drawable/rc_circuit" />
 
         <TextView
             android:layout_width="match_parent"

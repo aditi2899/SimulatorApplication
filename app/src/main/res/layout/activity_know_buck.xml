@@ -12,6 +12,30 @@
         android:orientation="vertical">
 
         <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="5dp"
+            android:padding="13dp"
+            android:autoSizeTextType="uniform"
+            android:background="@color/black"
+            android:fontFamily="serif"
+            android:textAlignment="center"
+            android:textAllCaps="true"
+            android:textColor="@color/white"
+            android:textSize="35dp"
+            android:textStyle="bold"
+            android:text="Buck Converter"/>
+
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="300dp"
+            android:layout_gravity="center"
+            android:paddingRight="27dp"
+            android:src="@drawable/buck__1_" />
+
+        <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginHorizontal="5dp"
