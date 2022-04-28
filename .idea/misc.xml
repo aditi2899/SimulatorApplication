@@ -9,26 +9,39 @@
         <entry key="..\:/Users/dell/AndroidStudioProjects/SimulatorApplication/app/src/main/res/layout/activity_boost_io_t.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/dell/AndroidStudioProjects/SimulatorApplication/app/src/main/res/layout/activity_boost_vc_t.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/dell/AndroidStudioProjects/SimulatorApplication/app/src/main/res/layout/activity_boost_vl_t.xml" value="0.25416666666666665" />
-        <entry key="..\:/Users/dell/AndroidStudioProjects/SimulatorApplication/app/src/main/res/layout/activity_buck_boost_converter.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/dell/AndroidStudioProjects/SimulatorApplication/app/src/main/res/layout/activity_buck_il_t.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/dell/AndroidStudioProjects/SimulatorApplication/app/src/main/res/layout/activity_buck_io_t.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/dell/AndroidStudioProjects/SimulatorApplication/app/src/main/res/layout/activity_buck_vc_t.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/dell/AndroidStudioProjects/SimulatorApplication/app/src/main/res/layout/activity_buck_vl_t.xml" value="0.25416666666666665" />
-        <entry key="..\:/Users/dell/AndroidStudioProjects/SimulatorApplication/app/src/main/res/layout/activity_buckconverter.xml" value="0.2" />
+        <entry key="..\:/Users/dell/AndroidStudioProjects/SimulatorApplication/app/src/main/res/layout/activity_buckconverter.xml" value="0.1" />
         <entry key="..\:/Users/dell/AndroidStudioProjects/SimulatorApplication/app/src/main/res/layout/activity_form1.xml" value="0.21784420289855072" />
-        <entry key="..\:/Users/dell/AndroidStudioProjects/SimulatorApplication/app/src/main/res/layout/activity_know_boost.xml" value="0.25416666666666665" />
-        <entry key="..\:/Users/dell/AndroidStudioProjects/SimulatorApplication/app/src/main/res/layout/activity_know_buck.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/dell/AndroidStudioProjects/SimulatorApplication/app/src/main/res/layout/activity_main.xml" value="0.3197969543147208" />
         <entry key="..\:/Users/dell/AndroidStudioProjects/SimulatorApplication/app/src/main/res/layout/activity_rc_circuit.xml" value="0.11302083333333333" />
         <entry key="..\:/Users/dell/AndroidStudioProjects/SimulatorApplication/app/src/main/res/layout/activity_result_boost.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/dell/AndroidStudioProjects/SimulatorApplication/app/src/main/res/layout/activity_result_buck.xml" value="0.1" />
         <entry key="..\:/Users/dell/AndroidStudioProjects/SimulatorApplication/app/src/main/res/layout/activity_rl_circuit.xml" value="0.25416666666666665" />
+        <entry key="app/src/main/res/layout/activity_boost_all.xml" value="0.2515625" />
+        <entry key="app/src/main/res/layout/activity_boost_io_t.xml" value="0.2515625" />
+        <entry key="app/src/main/res/layout/activity_boost_vc_t.xml" value="0.2515625" />
+        <entry key="app/src/main/res/layout/activity_boost_vl_t.xml" value="0.2515625" />
         <entry key="app/src/main/res/layout/activity_buck_all.xml" value="0.16458333333333333" />
+        <entry key="app/src/main/res/layout/activity_buck_boost_converter.xml" value="0.2515625" />
+        <entry key="app/src/main/res/layout/activity_buck_vc_t.xml" value="0.2515625" />
         <entry key="app/src/main/res/layout/activity_know_boost.xml" value="0.2515625" />
         <entry key="app/src/main/res/layout/activity_know_buck.xml" value="0.2515625" />
+        <entry key="app/src/main/res/layout/activity_know_buck_boost.xml" value="0.2515625" />
         <entry key="app/src/main/res/layout/activity_know_rc.xml" value="0.2375" />
         <entry key="app/src/main/res/layout/activity_know_rl.xml" value="0.2515625" />
-        <entry key="app/src/main/res/layout/activity_result_boost.xml" value="0.16458333333333333" />
+        <entry key="app/src/main/res/layout/activity_main.xml" value="0.2515625" />
+        <entry key="app/src/main/res/layout/activity_rc_all.xml" value="0.2515625" />
+        <entry key="app/src/main/res/layout/activity_rc_it.xml" value="0.2515625" />
+        <entry key="app/src/main/res/layout/activity_rc_vt.xml" value="0.2515625" />
+        <entry key="app/src/main/res/layout/activity_result_boost.xml" value="0.165" />
+        <entry key="app/src/main/res/layout/activity_result_rc.xml" value="0.2515625" />
+        <entry key="app/src/main/res/layout/activity_result_rl.xml" value="0.2515625" />
+        <entry key="app/src/main/res/layout/activity_rl_all.xml" value="0.2515625" />
+        <entry key="app/src/main/res/layout/activity_rl_it.xml" value="0.2515625" />
+        <entry key="app/src/main/res/layout/activity_rl_vt.xml" value="0.2515625" />
       </map>
     </option>
   </component>
