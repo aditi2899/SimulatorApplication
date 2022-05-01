@@ -3,6 +3,7 @@ package com.example.simulatorapplication;
         import androidx.appcompat.app.AppCompatActivity;
 
         import android.content.Intent;
+        import android.graphics.Color;
         import android.os.Bundle;
         import android.util.Log;
 
@@ -40,6 +41,12 @@ public class RcAll extends AppCompatActivity {
         ArrayList<ILineDataSet> dataSets = new ArrayList<>();
         dataSets.add(lineDataSet1);
         dataSets.add(lineDataSet2);
+        lineDataSet1.setColor(Color.RED);
+        lineDataSet2.setColor(Color.BLUE);
+        lineDataSet1.setDrawCircles(false);
+        lineDataSet2.setDrawCircles(false);
+        lineDataSet1.setLineWidth(3);
+        lineDataSet2.setLineWidth(3);
         XAxis xAxis = mpLineChart.getXAxis();
         xAxis.setPosition(XAxis.XAxisPosition.BOTTOM);
         LineData data = new LineData(dataSets);
@@ -54,7 +61,7 @@ public class RcAll extends AppCompatActivity {
 
         float I=v/r;
         float dt= (float) .000001;
-        for (double t = 0; t <= 50; t += .1) {
+        for (double t = 0; t <= 100; t += .1) {
             float x = (float) t;
             float powe=((float) (-1)*x)/(r*c);
             double expo=  Math.exp((double) powe);
@@ -67,7 +74,7 @@ public class RcAll extends AppCompatActivity {
         ArrayList<Entry> dataVals = new ArrayList<Entry>();
 
         float dt= (float) .000001;
-        for (double t = 0; t <= 50; t += .1) {
+        for (double t = 0; t <= 100; t += .1) {
             float x = (float) t;
             float powe=((float) (-1)*x)/(r*c);
             double expo=  Math.exp((double) powe);

@@ -39,6 +39,8 @@ public class RcV_T extends AppCompatActivity {
         LineDataSet lineDataSet1 = new LineDataSet(dataValues1(), "V vs T");
         ArrayList<ILineDataSet> dataSets = new ArrayList<>();
         dataSets.add(lineDataSet1);
+        lineDataSet1.setDrawCircles(false);
+        lineDataSet1.setLineWidth(3);
         XAxis xAxis = mpLineChart.getXAxis();
         xAxis.setPosition(XAxis.XAxisPosition.BOTTOM);
         LineData data = new LineData(dataSets);
@@ -53,7 +55,7 @@ public class RcV_T extends AppCompatActivity {
         ArrayList<Entry> dataVals = new ArrayList<Entry>();
 
         float dt= (float) .000001;
-        for (double t = 0; t <= 50; t += .1) {
+        for (double t = 0; t <= 100; t += .1) {
             float x = (float) t;
             float powe=((float) (-1)*x)/(r*c);
             double expo=  Math.exp((double) powe);

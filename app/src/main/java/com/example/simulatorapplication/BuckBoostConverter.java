@@ -107,7 +107,7 @@ public class BuckBoostConverter extends AppCompatActivity {
                 }
                 else
                 {
-                    Intent i = new Intent(getApplicationContext(), resultBoost.class);
+                    Intent i = new Intent(getApplicationContext(), resultBuckBoost.class);
                     i.putExtras(bundle);
                     startActivity(i);
                 }
