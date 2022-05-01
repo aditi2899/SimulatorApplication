@@ -62,6 +62,7 @@ public class RcI_T extends AppCompatActivity {
             float powe=((float) (-1)*x)/(r*c);
             double expo=  Math.exp((double) powe);
             dataVals.add(new Entry(x, I*(float)expo));
+
         }
         return dataVals;
     }
